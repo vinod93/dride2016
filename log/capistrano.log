@@ -722,3 +722,259 @@ You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
  DEBUG [496d7b6a] 	
  DEBUG [496d7b6a] 	Tasks: TOP => assets:precompile
  DEBUG [496d7b6a] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-05-27 01:49:28 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3dc90058] Running [ -d ~/.rvm ] on 188.166.185.120
+ DEBUG [3dc90058] Command: [ -d ~/.rvm ]
+ DEBUG [3dc90058] Finished in 26.841 seconds with exit status 1 (failed).
+ DEBUG [b88e239a] Running [ -d /usr/local/rvm ] on 188.166.185.120
+ DEBUG [b88e239a] Command: [ -d /usr/local/rvm ]
+ DEBUG [b88e239a] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [8ed400a8] Running /usr/local/rvm/bin/rvm version on 188.166.185.120
+ DEBUG [8ed400a8] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [8ed400a8] 	rvm 1.26.11 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [8ed400a8] Finished in 0.383 seconds with exit status 0 (successful).
+ DEBUG [2e7b9704] Running /usr/local/rvm/bin/rvm current on 188.166.185.120
+ DEBUG [2e7b9704] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [2e7b9704] 	ruby-2.2.1
+ DEBUG [2e7b9704] Finished in 0.587 seconds with exit status 0 (successful).
+ DEBUG [afd62288] Running /usr/local/rvm/bin/rvm default do ruby --version on 188.166.185.120
+ DEBUG [afd62288] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [afd62288] 	ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+ DEBUG [afd62288] 	
+ DEBUG [afd62288] Finished in 0.801 seconds with exit status 0 (successful).
+  INFO [4587e05d] Running /usr/bin/env mkdir -p /tmp/dride/ on 188.166.185.120
+ DEBUG [4587e05d] Command: /usr/bin/env mkdir -p /tmp/dride/
+  INFO [4587e05d] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/dride/git-ssh.sh 0.0%
+  INFO Uploading /tmp/dride/git-ssh.sh 100.0%
+  INFO [495e49d2] Running /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh on 188.166.185.120
+ DEBUG [495e49d2] Command: /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh
+  INFO [495e49d2] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [7be60055] Running /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git on 188.166.185.120
+ DEBUG [7be60055] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git )
+ DEBUG [7be60055] 	Warning: Permanently added the RSA host key for IP address '192.30.252.120' to the list of known hosts.
+ DEBUG [7be60055] 	
+ DEBUG [7be60055] 	fbf0ec70057319617df38cfc51b86fc87a608299
+ DEBUG [7be60055] 		
+ DEBUG [7be60055] 	refs/heads/master
+ DEBUG [7be60055] 	
+  INFO [7be60055] Finished in 3.601 seconds with exit status 0 (successful).
+  INFO [bc06e625] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases on 188.166.185.120
+ DEBUG [bc06e625] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases
+  INFO [bc06e625] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [3ff08260] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets on 188.166.185.120
+ DEBUG [3ff08260] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets
+  INFO [3ff08260] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [9e163a8f] Running [ -f /home/rails/apps/dride/shared/puma.rb ] on 188.166.185.120
+ DEBUG [9e163a8f] Command: [ -f /home/rails/apps/dride/shared/puma.rb ]
+ DEBUG [9e163a8f] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [f3685cbd] Running [ -f /home/rails/apps/dride/current/REVISION ] on 188.166.185.120
+ DEBUG [f3685cbd] Command: [ -f /home/rails/apps/dride/current/REVISION ]
+ DEBUG [f3685cbd] Finished in 0.145 seconds with exit status 1 (failed).
+ DEBUG [96d0360d] Running [ -f /home/rails/apps/dride/repo/HEAD ] on 188.166.185.120
+ DEBUG [96d0360d] Command: [ -f /home/rails/apps/dride/repo/HEAD ]
+ DEBUG [96d0360d] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/rails/apps/dride/repo
+ DEBUG [b893bdb7] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [b893bdb7] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [b893bdb7] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [1edcf0c9] Running /usr/bin/env git remote update --prune on 188.166.185.120
+ DEBUG [1edcf0c9] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [1edcf0c9] 	Fetching origin
+ DEBUG [1edcf0c9] 	
+ DEBUG [1edcf0c9] 	Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
+ DEBUG [1edcf0c9] 	
+ DEBUG [1edcf0c9] 	remote: Counting objects: 6, done.[K
+ DEBUG [1edcf0c9] 	
+ DEBUG [1edcf0c9] 	remote: Compressing objects:  50% (1/2)   [K
+ DEBUG [1edcf0c9] 	remote: Compressing objects: 100% (2/2)   [K
+ DEBUG [1edcf0c9] 	remote: Compressing objects: 100% (2/2), done.[K
+ DEBUG [1edcf0c9] 	
+ DEBUG [1edcf0c9] 	remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0[K
+ DEBUG [1edcf0c9] 	
+ DEBUG [1edcf0c9] 	Unpacking objects:  16% (1/6)   
+ DEBUG [1edcf0c9] 	Unpacking objects:  33% (2/6)   
+ DEBUG [1edcf0c9] 	Unpacking objects:  50% (3/6)   
+ DEBUG [1edcf0c9] 	Unpacking objects:  66% (4/6)   
+ DEBUG [1edcf0c9] 	Unpacking objects:  83% (5/6)   
+ DEBUG [1edcf0c9] 	Unpacking objects: 100% (6/6)   
+ DEBUG [1edcf0c9] 	Unpacking objects: 100% (6/6), done.
+ DEBUG [1edcf0c9] 	
+ DEBUG [1edcf0c9] 	From github.com:vinod93/dride2016
+ DEBUG [1edcf0c9] 	
+ DEBUG [1edcf0c9] 	   e07f0e5..fbf0ec7  master     -> master
+ DEBUG [1edcf0c9] 	
+  INFO [1edcf0c9] Finished in 4.085 seconds with exit status 0 (successful).
+ DEBUG [4b721a89] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [4b721a89] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [4b721a89] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [144efae5] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202002 on 188.166.185.120
+ DEBUG [144efae5] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202002 )
+  INFO [144efae5] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [b5069221] Running /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526202002 on 188.166.185.120
+ DEBUG [b5069221] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526202002 )
+  INFO [b5069221] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [885e73e1] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [885e73e1] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [885e73e1] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [4c44d002] Running /usr/bin/env git rev-list --max-count=1 master on 188.166.185.120
+ DEBUG [4c44d002] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [4c44d002] 	fbf0ec70057319617df38cfc51b86fc87a608299
+ DEBUG [4c44d002] 	
+ DEBUG [4c44d002] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [e54d0b58] Running if test ! -d /home/rails/apps/dride/releases/20160526202002; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202002'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [e54d0b58] Command: if test ! -d /home/rails/apps/dride/releases/20160526202002; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202002'" 1>&2; false; fi
+ DEBUG [e54d0b58] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [ffc25b19] Running /usr/bin/env echo "fbf0ec70057319617df38cfc51b86fc87a608299" >> REVISION on 188.166.185.120
+ DEBUG [ffc25b19] Command: cd /home/rails/apps/dride/releases/20160526202002 && /usr/bin/env echo "fbf0ec70057319617df38cfc51b86fc87a608299" >> REVISION
+  INFO [ffc25b19] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [c165579e] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202002/public on 188.166.185.120
+ DEBUG [c165579e] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202002/public
+  INFO [c165579e] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [168e7eeb] Running [ -L /home/rails/apps/dride/releases/20160526202002/public/assets ] on 188.166.185.120
+ DEBUG [168e7eeb] Command: [ -L /home/rails/apps/dride/releases/20160526202002/public/assets ]
+ DEBUG [168e7eeb] Finished in 0.142 seconds with exit status 1 (failed).
+ DEBUG [96b3eb1a] Running [ -d /home/rails/apps/dride/releases/20160526202002/public/assets ] on 188.166.185.120
+ DEBUG [96b3eb1a] Command: [ -d /home/rails/apps/dride/releases/20160526202002/public/assets ]
+ DEBUG [96b3eb1a] Finished in 0.140 seconds with exit status 1 (failed).
+  INFO [1aae42a8] Running /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526202002/public/assets on 188.166.185.120
+ DEBUG [1aae42a8] Command: /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526202002/public/assets
+  INFO [1aae42a8] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [36b6683d] Running if test ! -d /home/rails/apps/dride/releases/20160526202002; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202002'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [36b6683d] Command: if test ! -d /home/rails/apps/dride/releases/20160526202002; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202002'" 1>&2; false; fi
+ DEBUG [36b6683d] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [66c000dc] Running /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet on 188.166.185.120
+ DEBUG [66c000dc] Command: cd /home/rails/apps/dride/releases/20160526202002 && /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet
+ DEBUG [66c000dc] 	Warning, new version of rvm available '1.27.0', you are using older version '1.26.11'.
+You can disable this warning with:    echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+ DEBUG [66c000dc] 	[31mYou are trying to install in deployment mode after changing
+ DEBUG [66c000dc] 	
+ DEBUG [66c000dc] 	your Gemfile. Run `bundle install` elsewhere and add the
+ DEBUG [66c000dc] 	
+ DEBUG [66c000dc] 	updated Gemfile.lock to version control.
+ DEBUG [66c000dc] 	
+ DEBUG [66c000dc] 	
+ DEBUG [66c000dc] 	You have added to the Gemfile:
+ DEBUG [66c000dc] 	
+ DEBUG [66c000dc] 	* turbolinks[0m
+ DEBUG [66c000dc] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-05-27 01:55:58 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [1f5ecb67] Running [ -d ~/.rvm ] on 188.166.185.120
+ DEBUG [1f5ecb67] Command: [ -d ~/.rvm ]
+ DEBUG [1f5ecb67] Finished in 8.168 seconds with exit status 1 (failed).
+ DEBUG [c4480669] Running [ -d /usr/local/rvm ] on 188.166.185.120
+ DEBUG [c4480669] Command: [ -d /usr/local/rvm ]
+ DEBUG [c4480669] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [d454dfae] Running /usr/local/rvm/bin/rvm version on 188.166.185.120
+ DEBUG [d454dfae] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [d454dfae] 	rvm 1.26.11 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [d454dfae] 	
+ DEBUG [d454dfae] Finished in 0.326 seconds with exit status 0 (successful).
+ DEBUG [9e3ab80a] Running /usr/local/rvm/bin/rvm current on 188.166.185.120
+ DEBUG [9e3ab80a] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [9e3ab80a] 	ruby-2.2.1
+ DEBUG [9e3ab80a] 	
+ DEBUG [9e3ab80a] Finished in 0.392 seconds with exit status 0 (successful).
+ DEBUG [7cd216ab] Running /usr/local/rvm/bin/rvm default do ruby --version on 188.166.185.120
+ DEBUG [7cd216ab] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [7cd216ab] 	ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+ DEBUG [7cd216ab] 	
+ DEBUG [7cd216ab] Finished in 0.511 seconds with exit status 0 (successful).
+  INFO [4bce2143] Running /usr/bin/env mkdir -p /tmp/dride/ on 188.166.185.120
+ DEBUG [4bce2143] Command: /usr/bin/env mkdir -p /tmp/dride/
+  INFO [4bce2143] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/dride/git-ssh.sh 0.0%
+  INFO Uploading /tmp/dride/git-ssh.sh 100.0%
+  INFO [f82d33b6] Running /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh on 188.166.185.120
+ DEBUG [f82d33b6] Command: /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh
+  INFO [f82d33b6] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [60e6d741] Running /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git on 188.166.185.120
+ DEBUG [60e6d741] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git )
+ DEBUG [60e6d741] 	fbf0ec70057319617df38cfc51b86fc87a608299
+ DEBUG [60e6d741] 		
+ DEBUG [60e6d741] 	refs/heads/master
+ DEBUG [60e6d741] 	
+  INFO [60e6d741] Finished in 3.567 seconds with exit status 0 (successful).
+  INFO [52f66480] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases on 188.166.185.120
+ DEBUG [52f66480] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases
+  INFO [52f66480] Finished in 0.121 seconds with exit status 0 (successful).
+  INFO [b0f26653] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets on 188.166.185.120
+ DEBUG [b0f26653] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets
+  INFO [b0f26653] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [44539758] Running [ -f /home/rails/apps/dride/shared/puma.rb ] on 188.166.185.120
+ DEBUG [44539758] Command: [ -f /home/rails/apps/dride/shared/puma.rb ]
+ DEBUG [44539758] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG [dee4dd3c] Running [ -f /home/rails/apps/dride/current/REVISION ] on 188.166.185.120
+ DEBUG [dee4dd3c] Command: [ -f /home/rails/apps/dride/current/REVISION ]
+ DEBUG [dee4dd3c] Finished in 0.119 seconds with exit status 1 (failed).
+ DEBUG [4daefc0b] Running [ -f /home/rails/apps/dride/repo/HEAD ] on 188.166.185.120
+ DEBUG [4daefc0b] Command: [ -f /home/rails/apps/dride/repo/HEAD ]
+ DEBUG [4daefc0b] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/rails/apps/dride/repo
+ DEBUG [8621efc7] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [8621efc7] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [8621efc7] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [744d0462] Running /usr/bin/env git remote update --prune on 188.166.185.120
+ DEBUG [744d0462] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [744d0462] 	Fetching origin
+ DEBUG [744d0462] 	
+  INFO [744d0462] Finished in 6.502 seconds with exit status 0 (successful).
+ DEBUG [c7ccd10d] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [c7ccd10d] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [c7ccd10d] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [8483ea25] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202612 on 188.166.185.120
+ DEBUG [8483ea25] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202612 )
+  INFO [8483ea25] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [cbcd80ec] Running /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526202612 on 188.166.185.120
+ DEBUG [cbcd80ec] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526202612 )
+  INFO [cbcd80ec] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [f25fe546] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [f25fe546] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [f25fe546] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG [c65a5964] Running /usr/bin/env git rev-list --max-count=1 master on 188.166.185.120
+ DEBUG [c65a5964] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [c65a5964] 	fbf0ec70057319617df38cfc51b86fc87a608299
+ DEBUG [c65a5964] 	
+ DEBUG [c65a5964] Finished in 0.135 seconds with exit status 0 (successful).
+ DEBUG [c60fe92b] Running if test ! -d /home/rails/apps/dride/releases/20160526202612; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202612'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [c60fe92b] Command: if test ! -d /home/rails/apps/dride/releases/20160526202612; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202612'" 1>&2; false; fi
+ DEBUG [c60fe92b] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [a536c413] Running /usr/bin/env echo "fbf0ec70057319617df38cfc51b86fc87a608299" >> REVISION on 188.166.185.120
+ DEBUG [a536c413] Command: cd /home/rails/apps/dride/releases/20160526202612 && /usr/bin/env echo "fbf0ec70057319617df38cfc51b86fc87a608299" >> REVISION
+  INFO [a536c413] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [44346405] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202612/public on 188.166.185.120
+ DEBUG [44346405] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202612/public
+  INFO [44346405] Finished in 0.129 seconds with exit status 0 (successful).
+ DEBUG [36f91ddf] Running [ -L /home/rails/apps/dride/releases/20160526202612/public/assets ] on 188.166.185.120
+ DEBUG [36f91ddf] Command: [ -L /home/rails/apps/dride/releases/20160526202612/public/assets ]
+ DEBUG [36f91ddf] Finished in 0.127 seconds with exit status 1 (failed).
+ DEBUG [8bea99b8] Running [ -d /home/rails/apps/dride/releases/20160526202612/public/assets ] on 188.166.185.120
+ DEBUG [8bea99b8] Command: [ -d /home/rails/apps/dride/releases/20160526202612/public/assets ]
+ DEBUG [8bea99b8] Finished in 0.119 seconds with exit status 1 (failed).
+  INFO [6ecee5ef] Running /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526202612/public/assets on 188.166.185.120
+ DEBUG [6ecee5ef] Command: /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526202612/public/assets
+  INFO [6ecee5ef] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG [101411e0] Running if test ! -d /home/rails/apps/dride/releases/20160526202612; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202612'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [101411e0] Command: if test ! -d /home/rails/apps/dride/releases/20160526202612; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202612'" 1>&2; false; fi
+ DEBUG [101411e0] Finished in 0.120 seconds with exit status 0 (successful).
+  INFO [978bfa84] Running /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet on 188.166.185.120
+ DEBUG [978bfa84] Command: cd /home/rails/apps/dride/releases/20160526202612 && /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet
+ DEBUG [978bfa84] 	Warning, new version of rvm available '1.27.0', you are using older version '1.26.11'.
+You can disable this warning with:    echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+ DEBUG [978bfa84] 	[31mYou are trying to install in deployment mode after changing
+ DEBUG [978bfa84] 	
+ DEBUG [978bfa84] 	your Gemfile. Run `bundle install` elsewhere and add the
+ DEBUG [978bfa84] 	
+ DEBUG [978bfa84] 	updated Gemfile.lock to version control.
+ DEBUG [978bfa84] 	
+ DEBUG [978bfa84] 	
+ DEBUG [978bfa84] 	You have added to the Gemfile:
+ DEBUG [978bfa84] 	
+ DEBUG [978bfa84] 	* turbolinks[0m
+ DEBUG [978bfa84] 	
