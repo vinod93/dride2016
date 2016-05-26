@@ -978,3 +978,700 @@ You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
  DEBUG [978bfa84] 	
  DEBUG [978bfa84] 	* turbolinks[0m
  DEBUG [978bfa84] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-05-27 01:59:41 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [64caafed] Running [ -d ~/.rvm ] on 188.166.185.120
+ DEBUG [64caafed] Command: [ -d ~/.rvm ]
+ DEBUG [64caafed] Finished in 8.694 seconds with exit status 1 (failed).
+ DEBUG [37fa8d67] Running [ -d /usr/local/rvm ] on 188.166.185.120
+ DEBUG [37fa8d67] Command: [ -d /usr/local/rvm ]
+ DEBUG [37fa8d67] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [205eb721] Running /usr/local/rvm/bin/rvm version on 188.166.185.120
+ DEBUG [205eb721] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [205eb721] 	rvm 1.26.11 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [205eb721] Finished in 0.352 seconds with exit status 0 (successful).
+ DEBUG [6f08d5d1] Running /usr/local/rvm/bin/rvm current on 188.166.185.120
+ DEBUG [6f08d5d1] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [6f08d5d1] 	ruby-2.2.1
+ DEBUG [6f08d5d1] 	
+ DEBUG [6f08d5d1] Finished in 0.453 seconds with exit status 0 (successful).
+ DEBUG [f13968a6] Running /usr/local/rvm/bin/rvm default do ruby --version on 188.166.185.120
+ DEBUG [f13968a6] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [f13968a6] 	ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+ DEBUG [f13968a6] 	
+ DEBUG [f13968a6] Finished in 0.729 seconds with exit status 0 (successful).
+  INFO [06601595] Running /usr/bin/env mkdir -p /tmp/dride/ on 188.166.185.120
+ DEBUG [06601595] Command: /usr/bin/env mkdir -p /tmp/dride/
+  INFO [06601595] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/dride/git-ssh.sh 0.0%
+  INFO Uploading /tmp/dride/git-ssh.sh 100.0%
+  INFO [367ba30c] Running /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh on 188.166.185.120
+ DEBUG [367ba30c] Command: /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh
+  INFO [367ba30c] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [c72c1e6a] Running /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git on 188.166.185.120
+ DEBUG [c72c1e6a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git )
+ DEBUG [c72c1e6a] 	adb71920d9651a407590a5b88c228d3c2d08ea54
+ DEBUG [c72c1e6a] 		
+ DEBUG [c72c1e6a] 	refs/heads/master
+ DEBUG [c72c1e6a] 	
+  INFO [c72c1e6a] Finished in 3.569 seconds with exit status 0 (successful).
+  INFO [fd191ac9] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases on 188.166.185.120
+ DEBUG [fd191ac9] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases
+  INFO [fd191ac9] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [2265c426] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets on 188.166.185.120
+ DEBUG [2265c426] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets
+  INFO [2265c426] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [fb2640ad] Running [ -f /home/rails/apps/dride/shared/puma.rb ] on 188.166.185.120
+ DEBUG [fb2640ad] Command: [ -f /home/rails/apps/dride/shared/puma.rb ]
+ DEBUG [fb2640ad] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [7485b3bc] Running [ -f /home/rails/apps/dride/current/REVISION ] on 188.166.185.120
+ DEBUG [7485b3bc] Command: [ -f /home/rails/apps/dride/current/REVISION ]
+ DEBUG [7485b3bc] Finished in 0.149 seconds with exit status 1 (failed).
+ DEBUG [9a393c88] Running [ -f /home/rails/apps/dride/repo/HEAD ] on 188.166.185.120
+ DEBUG [9a393c88] Command: [ -f /home/rails/apps/dride/repo/HEAD ]
+ DEBUG [9a393c88] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/rails/apps/dride/repo
+ DEBUG [5c06528f] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [5c06528f] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [5c06528f] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [fdeca3bc] Running /usr/bin/env git remote update --prune on 188.166.185.120
+ DEBUG [fdeca3bc] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [fdeca3bc] 	Fetching origin
+ DEBUG [fdeca3bc] 	
+ DEBUG [fdeca3bc] 	remote: Counting objects: 6, done.[K
+ DEBUG [fdeca3bc] 	
+ DEBUG [fdeca3bc] 	remote: Compressing objects: 100% (1/1)   [K
+ DEBUG [fdeca3bc] 	remote: Compressing objects: 100% (1/1), done.[K
+ DEBUG [fdeca3bc] 	
+ DEBUG [fdeca3bc] 	remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0[K
+ DEBUG [fdeca3bc] 	
+ DEBUG [fdeca3bc] 	Unpacking objects:  16% (1/6)   
+ DEBUG [fdeca3bc] 	Unpacking objects:  33% (2/6)   
+ DEBUG [fdeca3bc] 	Unpacking objects:  50% (3/6)   
+ DEBUG [fdeca3bc] 	Unpacking objects:  66% (4/6)   
+ DEBUG [fdeca3bc] 	Unpacking objects:  83% (5/6)   
+ DEBUG [fdeca3bc] 	Unpacking objects: 100% (6/6)   
+ DEBUG [fdeca3bc] 	Unpacking objects: 100% (6/6), done.
+ DEBUG [fdeca3bc] 	
+ DEBUG [fdeca3bc] 	From github.com:vinod93/dride2016
+ DEBUG [fdeca3bc] 	
+ DEBUG [fdeca3bc] 	   fbf0ec7..adb7192  master     -> master
+ DEBUG [fdeca3bc] 	
+  INFO [fdeca3bc] Finished in 4.020 seconds with exit status 0 (successful).
+ DEBUG [79b94909] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [79b94909] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [79b94909] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [e26bb09e] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202956 on 188.166.185.120
+ DEBUG [e26bb09e] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202956 )
+  INFO [e26bb09e] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [747567b3] Running /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526202956 on 188.166.185.120
+ DEBUG [747567b3] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526202956 )
+  INFO [747567b3] Finished in 0.159 seconds with exit status 0 (successful).
+ DEBUG [ab18e080] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [ab18e080] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [ab18e080] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [5c3589f5] Running /usr/bin/env git rev-list --max-count=1 master on 188.166.185.120
+ DEBUG [5c3589f5] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [5c3589f5] 	adb71920d9651a407590a5b88c228d3c2d08ea54
+ DEBUG [5c3589f5] 	
+ DEBUG [5c3589f5] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [63848310] Running if test ! -d /home/rails/apps/dride/releases/20160526202956; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202956'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [63848310] Command: if test ! -d /home/rails/apps/dride/releases/20160526202956; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202956'" 1>&2; false; fi
+ DEBUG [63848310] Finished in 0.180 seconds with exit status 0 (successful).
+  INFO [dc2a9bd5] Running /usr/bin/env echo "adb71920d9651a407590a5b88c228d3c2d08ea54" >> REVISION on 188.166.185.120
+ DEBUG [dc2a9bd5] Command: cd /home/rails/apps/dride/releases/20160526202956 && /usr/bin/env echo "adb71920d9651a407590a5b88c228d3c2d08ea54" >> REVISION
+  INFO [dc2a9bd5] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [b7511578] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202956/public on 188.166.185.120
+ DEBUG [b7511578] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202956/public
+  INFO [b7511578] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [71370255] Running [ -L /home/rails/apps/dride/releases/20160526202956/public/assets ] on 188.166.185.120
+ DEBUG [71370255] Command: [ -L /home/rails/apps/dride/releases/20160526202956/public/assets ]
+ DEBUG [71370255] Finished in 0.149 seconds with exit status 1 (failed).
+ DEBUG [05f204d9] Running [ -d /home/rails/apps/dride/releases/20160526202956/public/assets ] on 188.166.185.120
+ DEBUG [05f204d9] Command: [ -d /home/rails/apps/dride/releases/20160526202956/public/assets ]
+ DEBUG [05f204d9] Finished in 0.159 seconds with exit status 1 (failed).
+  INFO [ede9dbbe] Running /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526202956/public/assets on 188.166.185.120
+ DEBUG [ede9dbbe] Command: /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526202956/public/assets
+  INFO [ede9dbbe] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [46d64226] Running if test ! -d /home/rails/apps/dride/releases/20160526202956; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202956'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [46d64226] Command: if test ! -d /home/rails/apps/dride/releases/20160526202956; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202956'" 1>&2; false; fi
+ DEBUG [46d64226] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [0df31c70] Running /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet on 188.166.185.120
+ DEBUG [0df31c70] Command: cd /home/rails/apps/dride/releases/20160526202956 && /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet
+ DEBUG [0df31c70] 	Warning, new version of rvm available '1.27.0', you are using older version '1.26.11'.
+ DEBUG [0df31c70] 	
+ DEBUG [0df31c70] 	You can disable this warning with:    echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+ DEBUG [0df31c70] 	
+ DEBUG [0df31c70] 	You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+ DEBUG [0df31c70] 	
+  INFO [0df31c70] Finished in 24.029 seconds with exit status 0 (successful).
+ DEBUG [fb65d4cb] Running if test ! -d /home/rails/apps/dride/releases/20160526202956; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202956'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [fb65d4cb] Command: if test ! -d /home/rails/apps/dride/releases/20160526202956; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202956'" 1>&2; false; fi
+ DEBUG [fb65d4cb] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [82c29fe7] Running /usr/local/rvm/bin/rvm default do bundle exec rake assets:precompile on 188.166.185.120
+ DEBUG [82c29fe7] Command: cd /home/rails/apps/dride/releases/20160526202956 && ( export RAILS_ENV="production" ; /usr/local/rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [82c29fe7] 	I, [2016-05-26T16:30:24.114953 #1100]  INFO -- : Writing /home/rails/apps/dride/releases/20160526202956/public/assets/application-f51a52e2dc61278f78b2b181286b91096cf236e0942e6f57f5c5b8dc24fa28f7.js
+ DEBUG [82c29fe7] 	
+ DEBUG [82c29fe7] 	I, [2016-05-26T16:30:24.115955 #1100]  INFO -- : Writing /home/rails/apps/dride/releases/20160526202956/public/assets/application-f51a52e2dc61278f78b2b181286b91096cf236e0942e6f57f5c5b8dc24fa28f7.js.gz
+ DEBUG [82c29fe7] 	
+ DEBUG [82c29fe7] 	I, [2016-05-26T16:30:24.126160 #1100]  INFO -- : Writing /home/rails/apps/dride/releases/20160526202956/public/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css
+ DEBUG [82c29fe7] 	
+ DEBUG [82c29fe7] 	I, [2016-05-26T16:30:24.126614 #1100]  INFO -- : Writing /home/rails/apps/dride/releases/20160526202956/public/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css.gz
+ DEBUG [82c29fe7] 	
+  INFO [82c29fe7] Finished in 8.103 seconds with exit status 0 (successful).
+ DEBUG [d3a6e472] Running if test ! -d /home/rails/apps/dride/releases/20160526202956; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202956'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [d3a6e472] Command: if test ! -d /home/rails/apps/dride/releases/20160526202956; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202956'" 1>&2; false; fi
+ DEBUG [d3a6e472] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [e0f4d57f] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202956/assets_manifest_backup on 188.166.185.120
+ DEBUG [e0f4d57f] Command: cd /home/rails/apps/dride/releases/20160526202956 && /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526202956/assets_manifest_backup
+  INFO [e0f4d57f] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [fb35d127] Running /usr/bin/env ls /home/rails/apps/dride/releases/20160526202956/public/assets/.sprockets-manifest* on 188.166.185.120
+ DEBUG [fb35d127] Command: cd /home/rails/apps/dride/releases/20160526202956 && /usr/bin/env ls /home/rails/apps/dride/releases/20160526202956/public/assets/.sprockets-manifest*
+ DEBUG [fb35d127] 	/home/rails/apps/dride/releases/20160526202956/public/assets/.sprockets-manifest-4b4806d4fee88b71ef0377c037302466.json
+ DEBUG [fb35d127] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [cb7f82b0] Running /usr/bin/env ls /home/rails/apps/dride/releases/20160526202956/public/assets/.sprockets-manifest* on 188.166.185.120
+ DEBUG [cb7f82b0] Command: cd /home/rails/apps/dride/releases/20160526202956 && /usr/bin/env ls /home/rails/apps/dride/releases/20160526202956/public/assets/.sprockets-manifest*
+ DEBUG [cb7f82b0] 	/home/rails/apps/dride/releases/20160526202956/public/assets/.sprockets-manifest-4b4806d4fee88b71ef0377c037302466.json
+ DEBUG [cb7f82b0] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [b69dabb1] Running /usr/bin/env cp /home/rails/apps/dride/releases/20160526202956/public/assets/.sprockets-manifest-4b4806d4fee88b71ef0377c037302466.json /home/rails/apps/dride/releases/20160526202956/assets_manifest_backup on 188.166.185.120
+ DEBUG [b69dabb1] Command: cd /home/rails/apps/dride/releases/20160526202956 && /usr/bin/env cp /home/rails/apps/dride/releases/20160526202956/public/assets/.sprockets-manifest-4b4806d4fee88b71ef0377c037302466.json /home/rails/apps/dride/releases/20160526202956/assets_manifest_backup
+  INFO [b69dabb1] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [5656824a] Running if test ! -d /home/rails/apps/dride/releases/20160526202956; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202956'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [5656824a] Command: if test ! -d /home/rails/apps/dride/releases/20160526202956; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526202956'" 1>&2; false; fi
+ DEBUG [5656824a] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [baa9f6e1] Running /usr/local/rvm/bin/rvm default do bundle exec rake db:migrate on 188.166.185.120
+ DEBUG [baa9f6e1] Command: cd /home/rails/apps/dride/releases/20160526202956 && ( export RAILS_ENV="production" ; /usr/local/rvm/bin/rvm default do bundle exec rake db:migrate )
+  INFO [baa9f6e1] Finished in 4.231 seconds with exit status 0 (successful).
+  INFO [327518d9] Running /usr/bin/env ln -s /home/rails/apps/dride/releases/20160526202956 /home/rails/apps/dride/releases/current on 188.166.185.120
+ DEBUG [327518d9] Command: /usr/bin/env ln -s /home/rails/apps/dride/releases/20160526202956 /home/rails/apps/dride/releases/current
+  INFO [327518d9] Finished in 0.209 seconds with exit status 0 (successful).
+  INFO [8ae9543f] Running /usr/bin/env mv /home/rails/apps/dride/releases/current /home/rails/apps/dride on 188.166.185.120
+ DEBUG [8ae9543f] Command: /usr/bin/env mv /home/rails/apps/dride/releases/current /home/rails/apps/dride
+  INFO [8ae9543f] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [25a783a8] Running /usr/bin/env ls -xtr /home/rails/apps/dride/releases on 188.166.185.120
+ DEBUG [25a783a8] Command: /usr/bin/env ls -xtr /home/rails/apps/dride/releases
+ DEBUG [25a783a8] 	20160526200246
+ DEBUG [25a783a8] 		
+ DEBUG [25a783a8] 	20160526201209
+ DEBUG [25a783a8] 		
+ DEBUG [25a783a8] 	20160526202002
+ DEBUG [25a783a8] 		
+ DEBUG [25a783a8] 	20160526202612
+ DEBUG [25a783a8] 		
+ DEBUG [25a783a8] 	20160526202956
+ DEBUG [25a783a8] 	
+ DEBUG [25a783a8] Finished in 0.216 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 5 deployed releases on 188.166.185.120
+  INFO No old releases (keeping newest 5) on 188.166.185.120
+  INFO [b5b7d11e] Running mkdir /home/rails/apps/dride/shared/tmp/sockets -p on 188.166.185.120
+ DEBUG [b5b7d11e] Command: mkdir /home/rails/apps/dride/shared/tmp/sockets -p
+  INFO [b5b7d11e] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [67ff2215] Running mkdir /home/rails/apps/dride/shared/tmp/pids -p on 188.166.185.120
+ DEBUG [67ff2215] Command: mkdir /home/rails/apps/dride/shared/tmp/pids -p
+  INFO [67ff2215] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [28e61254] Running [ -f /home/rails/apps/dride/shared/puma.rb ] on 188.166.185.120
+ DEBUG [28e61254] Command: [ -f /home/rails/apps/dride/shared/puma.rb ]
+ DEBUG [28e61254] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO using conf file /home/rails/apps/dride/shared/puma.rb
+ DEBUG [df39e3a1] Running if test ! -d /home/rails/apps/dride/current; then echo "Directory does not exist '/home/rails/apps/dride/current'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [df39e3a1] Command: if test ! -d /home/rails/apps/dride/current; then echo "Directory does not exist '/home/rails/apps/dride/current'" 1>&2; false; fi
+ DEBUG [df39e3a1] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [d4bfec87] Running /usr/local/rvm/bin/rvm default do bundle exec puma -C /home/rails/apps/dride/shared/puma.rb --daemon on 188.166.185.120
+ DEBUG [d4bfec87] Command: cd /home/rails/apps/dride/current && ( export RACK_ENV="production" ; /usr/local/rvm/bin/rvm default do bundle exec puma -C /home/rails/apps/dride/shared/puma.rb --daemon )
+ DEBUG [d4bfec87] 	Puma starting in single mode...
+* Version 3.4.0 (ruby 2.2.1-p85), codename: Owl Bowl Brawl
+* Min threads: 4, max threads: 16
+ DEBUG [d4bfec87] 	* Environment: production
+* Daemonizing...
+ DEBUG [d4bfec87] 	
+  INFO [d4bfec87] Finished in 1.184 seconds with exit status 0 (successful).
+ DEBUG [2a7cd1af] Running if test ! -d /home/rails/apps/dride/current; then echo "Directory does not exist '/home/rails/apps/dride/current'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [2a7cd1af] Command: if test ! -d /home/rails/apps/dride/current; then echo "Directory does not exist '/home/rails/apps/dride/current'" 1>&2; false; fi
+ DEBUG [2a7cd1af] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [8909601e] Running [ -f /home/rails/apps/dride/shared/tmp/pids/puma.pid ] on 188.166.185.120
+ DEBUG [8909601e] Command: [ -f /home/rails/apps/dride/shared/tmp/pids/puma.pid ]
+ DEBUG [8909601e] Finished in 0.147 seconds with exit status 1 (failed).
+ DEBUG [c6e06bbf] Running if test ! -d /home/rails/apps/dride/releases; then echo "Directory does not exist '/home/rails/apps/dride/releases'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [c6e06bbf] Command: if test ! -d /home/rails/apps/dride/releases; then echo "Directory does not exist '/home/rails/apps/dride/releases'" 1>&2; false; fi
+ DEBUG [c6e06bbf] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [0161ee23] Running /usr/bin/env echo "Branch master (at adb71920d9651a407590a5b88c228d3c2d08ea54) deployed as release 20160526202956 by vinodrathod" >> /home/rails/apps/dride/revisions.log on 188.166.185.120
+ DEBUG [0161ee23] Command: cd /home/rails/apps/dride/releases && /usr/bin/env echo "Branch master (at adb71920d9651a407590a5b88c228d3c2d08ea54) deployed as release 20160526202956 by vinodrathod" >> /home/rails/apps/dride/revisions.log
+  INFO [0161ee23] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-05-27 02:43:01 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [21654442] Running [ -d ~/.rvm ] on 188.166.185.120
+ DEBUG [21654442] Command: [ -d ~/.rvm ]
+ DEBUG [21654442] Finished in 20.764 seconds with exit status 1 (failed).
+ DEBUG [226de566] Running [ -d /usr/local/rvm ] on 188.166.185.120
+ DEBUG [226de566] Command: [ -d /usr/local/rvm ]
+ DEBUG [226de566] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [d5f23fb6] Running /usr/local/rvm/bin/rvm version on 188.166.185.120
+ DEBUG [d5f23fb6] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [d5f23fb6] 	rvm 1.26.11 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [d5f23fb6] 	
+ DEBUG [d5f23fb6] Finished in 0.337 seconds with exit status 0 (successful).
+ DEBUG [37f3d8f2] Running /usr/local/rvm/bin/rvm current on 188.166.185.120
+ DEBUG [37f3d8f2] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [37f3d8f2] 	ruby-2.2.1
+ DEBUG [37f3d8f2] 	
+ DEBUG [37f3d8f2] Finished in 0.320 seconds with exit status 0 (successful).
+ DEBUG [3f815f2c] Running /usr/local/rvm/bin/rvm default do ruby --version on 188.166.185.120
+ DEBUG [3f815f2c] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [3f815f2c] 	ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+ DEBUG [3f815f2c] 	
+ DEBUG [3f815f2c] Finished in 0.574 seconds with exit status 0 (successful).
+  INFO [339ba3fa] Running /usr/bin/env mkdir -p /tmp/dride/ on 188.166.185.120
+ DEBUG [339ba3fa] Command: /usr/bin/env mkdir -p /tmp/dride/
+  INFO [339ba3fa] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/dride/git-ssh.sh 0.0%
+  INFO Uploading /tmp/dride/git-ssh.sh 100.0%
+  INFO [d57bd4be] Running /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh on 188.166.185.120
+ DEBUG [d57bd4be] Command: /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh
+  INFO [d57bd4be] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [cfca5dd2] Running /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git on 188.166.185.120
+ DEBUG [cfca5dd2] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git )
+ DEBUG [cfca5dd2] 	Warning: Permanently added 'github.com,192.30.252.128' (RSA) to the list of known hosts.
+ DEBUG [cfca5dd2] 	
+ DEBUG [cfca5dd2] 	Permission denied (publickey).
+ DEBUG [cfca5dd2] 	
+ DEBUG [cfca5dd2] 	fatal: Could not read from remote repository.
+ DEBUG [cfca5dd2] 	
+ DEBUG [cfca5dd2] 	
+ DEBUG [cfca5dd2] 	Please make sure you have the correct access rights
+ DEBUG [cfca5dd2] 	
+ DEBUG [cfca5dd2] 	and the repository exists.
+ DEBUG [cfca5dd2] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-05-27 02:46:16 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f7e5edb9] Running [ -d ~/.rvm ] on 188.166.185.120
+ DEBUG [f7e5edb9] Command: [ -d ~/.rvm ]
+ DEBUG [f7e5edb9] Finished in 14.170 seconds with exit status 1 (failed).
+ DEBUG [247205bf] Running [ -d /usr/local/rvm ] on 188.166.185.120
+ DEBUG [247205bf] Command: [ -d /usr/local/rvm ]
+ DEBUG [247205bf] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [13fe7373] Running /usr/local/rvm/bin/rvm version on 188.166.185.120
+ DEBUG [13fe7373] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [13fe7373] 	rvm 1.26.11 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [13fe7373] 	
+ DEBUG [13fe7373] Finished in 0.351 seconds with exit status 0 (successful).
+ DEBUG [3c440dc2] Running /usr/local/rvm/bin/rvm current on 188.166.185.120
+ DEBUG [3c440dc2] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [3c440dc2] 	ruby-2.2.1
+ DEBUG [3c440dc2] Finished in 0.504 seconds with exit status 0 (successful).
+ DEBUG [75e986a6] Running /usr/local/rvm/bin/rvm default do ruby --version on 188.166.185.120
+ DEBUG [75e986a6] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [75e986a6] 	ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+ DEBUG [75e986a6] Finished in 0.764 seconds with exit status 0 (successful).
+  INFO [2682fb6d] Running /usr/bin/env mkdir -p /tmp/dride/ on 188.166.185.120
+ DEBUG [2682fb6d] Command: /usr/bin/env mkdir -p /tmp/dride/
+  INFO [2682fb6d] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/dride/git-ssh.sh 0.0%
+  INFO Uploading /tmp/dride/git-ssh.sh 100.0%
+  INFO [8b368e3c] Running /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh on 188.166.185.120
+ DEBUG [8b368e3c] Command: /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh
+  INFO [8b368e3c] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [1bc3fca9] Running /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git on 188.166.185.120
+ DEBUG [1bc3fca9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git )
+ DEBUG [1bc3fca9] 	Warning: Permanently added the RSA host key for IP address '192.30.252.120' to the list of known hosts.
+ DEBUG [1bc3fca9] 	
+ DEBUG [1bc3fca9] 	adb71920d9651a407590a5b88c228d3c2d08ea54
+ DEBUG [1bc3fca9] 		
+ DEBUG [1bc3fca9] 	refs/heads/master
+ DEBUG [1bc3fca9] 	
+  INFO [1bc3fca9] Finished in 3.612 seconds with exit status 0 (successful).
+  INFO [cb7627de] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases on 188.166.185.120
+ DEBUG [cb7627de] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases
+  INFO [cb7627de] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [41314ee0] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets on 188.166.185.120
+ DEBUG [41314ee0] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets
+  INFO [41314ee0] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [c8fba25b] Running [ -f /home/rails/apps/dride/shared/puma.rb ] on 188.166.185.120
+ DEBUG [c8fba25b] Command: [ -f /home/rails/apps/dride/shared/puma.rb ]
+ DEBUG [c8fba25b] Finished in 0.142 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /home/rails/apps/dride/shared/puma.rb 0.0%
+  INFO Uploading /home/rails/apps/dride/shared/puma.rb 100.0%
+  INFO puma.rb generated
+ DEBUG [fbd4e258] Running [ -f /home/rails/apps/dride/current/REVISION ] on 188.166.185.120
+ DEBUG [fbd4e258] Command: [ -f /home/rails/apps/dride/current/REVISION ]
+ DEBUG [fbd4e258] Finished in 0.143 seconds with exit status 1 (failed).
+ DEBUG [c2e03069] Running [ -f /home/rails/apps/dride/repo/HEAD ] on 188.166.185.120
+ DEBUG [c2e03069] Command: [ -f /home/rails/apps/dride/repo/HEAD ]
+ DEBUG [c2e03069] Finished in 0.143 seconds with exit status 1 (failed).
+ DEBUG [0132ef21] Running if test ! -d /home/rails/apps/dride; then echo "Directory does not exist '/home/rails/apps/dride'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [0132ef21] Command: if test ! -d /home/rails/apps/dride; then echo "Directory does not exist '/home/rails/apps/dride'" 1>&2; false; fi
+ DEBUG [0132ef21] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [016a40d8] Running /usr/bin/env git clone --mirror git@github.com:vinod93/dride2016.git /home/rails/apps/dride/repo on 188.166.185.120
+ DEBUG [016a40d8] Command: cd /home/rails/apps/dride && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git clone --mirror git@github.com:vinod93/dride2016.git /home/rails/apps/dride/repo )
+ DEBUG [016a40d8] 	Cloning into bare repository '/home/rails/apps/dride/repo'...
+ DEBUG [016a40d8] 	
+ DEBUG [016a40d8] 	Warning: Permanently added the RSA host key for IP address '192.30.252.123' to the list of known hosts.
+ DEBUG [016a40d8] 	
+ DEBUG [016a40d8] 	remote: Counting objects: 141, done.[K
+ DEBUG [016a40d8] 	
+ DEBUG [016a40d8] 	remote: Compressing objects:   1% (1/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:   2% (2/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:   3% (3/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objec
+ DEBUG [016a40d8] 	ts:   4% (4/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:   5% (5/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:   6% (6/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:   7% (7/100) 
+ DEBUG [016a40d8] 	  [K
+ DEBUG [016a40d8] 	remote: Compressing objects:   8% (8/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:   9% (9/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  10% (10/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing o
+ DEBUG [016a40d8] 	bjects:  11% (11/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  12% (12/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  13% (13/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  14% (14/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  15% (15/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  16% (16/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  17% (17/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  18% (18/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  19% (19/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  20% (20/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  21% (21/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  22% (22/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  23% (23/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  24% (24/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing ob
+ DEBUG [016a40d8] 	jects:  25% (25/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  26% (26/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  27% (27/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  28% (28/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  29% (29/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  30% (30/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  31% (31/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  32% (32/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  33% (33/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  34% (34/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  35% (35/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  36% (36/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  37% (37/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  38% (38/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  39% (39/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  40% (40/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  41% (41/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  42% (42/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  43% (43/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  44% (44/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  45% (45/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  46% (46/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  47% (47/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  48% (48/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  49% (49/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  50% (50/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  51% (51/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  52% (52/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  53% (53/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  54% (54/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  55% (55/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  56% (56/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  57% (57/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  58% (58/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  59% (59/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  60% (60/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  61% (61/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  62% (62/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing ob
+ DEBUG [016a40d8] 	jects:  63% (63/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  64% (64/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  65% (65/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  66% (66/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  67% (67/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  68% (68/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  69% (69/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  70% (70/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  71% (71/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  72% (72/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  73% (73/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  74% (74/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  75% (75/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  76% (76/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  77% (77/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  78% (78/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  79% (79/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  80% (80/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  81% (81/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  82% (82/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  83% (83/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  84% (84/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  85% (85/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  86% (86/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  87% (87/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  88% (88/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  89% (89/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  90% (90/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  91% (91/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  92% (92/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  93% (93/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  94% (94/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  95% (95/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  96% (96/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  97% (97/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  98% (98/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects:  99% (99/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects: 100% (100/100)   [K
+ DEBUG [016a40d8] 	remote: Compressing objects: 100% (100/100), done.[K
+ DEBUG [016a40d8] 	
+ DEBUG [016a40d8] 	Receiving objects:   0% (1/141)   
+ DEBUG [016a40d8] 	Receiving objects:   1% (2/141)   
+ DEBUG [016a40d8] 	Receiving objects:   2% (3/141)   
+ DEBUG [016a40d8] 	Receiving objects:   3% (5/141)   
+ DEBUG [016a40d8] 	Receiving objects:   4% (6/141)   
+ DEBUG [016a40d8] 	Receiving objects:   5% (8/141)   
+ DEBUG [016a40d8] 	Receiving objects:   6% (9/141)   
+ DEBUG [016a40d8] 	Receiving objects:   7% (10/141)   
+ DEBUG [016a40d8] 	Receiving objects:   8% (12/141)   
+ DEBUG [016a40d8] 	Receiving objects:   9% (13/141)   
+ DEBUG [016a40d8] 	Receiving objects:  10% (15/141)   
+ DEBUG [016a40d8] 	Receiving objects:  11% (16/141)   
+ DEBUG [016a40d8] 	Receiving objects:  12% (17/141)   
+ DEBUG [016a40d8] 	Receiving objects:  13% (19/141)   
+ DEBUG [016a40d8] 	Receiving objects:  14% (20/141)   
+ DEBUG [016a40d8] 	Receiving objects:  15% (22/141)   
+ DEBUG [016a40d8] 	Receiving objects:  16% (23/141)   
+ DEBUG [016a40d8] 	Receiving objects:  17% (24/141)   
+ DEBUG [016a40d8] 	Receiving objects:  18% (26/141)   
+ DEBUG [016a40d8] 	Receiving objects:  19% (27/141)   
+ DEBUG [016a40d8] 	Receiving objects:  20% (29/141)   
+ DEBUG [016a40d8] 	Receiving objects:  21% (30/141)   
+ DEBUG [016a40d8] 	Receiving objects:  22% (32/141)   
+ DEBUG [016a40d8] 	Receiving objects:  23% (33/141)   
+ DEBUG [016a40d8] 	Receiving objects:  24% (34/141)   
+ DEBUG [016a40d8] 	Receiving objects:  25% (36/141)   
+ DEBUG [016a40d8] 	Receiving objects:  26% (37/141)   
+ DEBUG [016a40d8] 	remote: Total 141 (delta 22), reused 134 (delta 15), pack-reused 0[K
+ DEBUG [016a40d8] 	
+ DEBUG [016a40d8] 	Receiving objects:  27% (39/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  28% (40/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  29% (41/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  30% (43/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  31% (44/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  32% (46/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  33% (47/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  34% (48/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  35% (50/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  36% (51/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  37% (53/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  38% (54/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  39% (55/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  40% (57/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  41% (58/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  42% (60/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  43% (61/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  44% (63/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  45% (64/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  46% (65/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  47% (67/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  48% (68/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  49% (70/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  50% (71/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  51% (72/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  52% (74/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  53% (75/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  54% (77/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  55% (78/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  56% (79/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  57% (81/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  58% (82/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  59% (84/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  60% (85/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  61% (87/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  62% (88/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  63% (89/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  64% (91/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  65% (92/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  66% (94/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  67% (95/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  68% (96/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  69% (98/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  70% (99/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  71% (101/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  72% (102/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  73% (103/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  74% (105/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  75% (106/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  76% (108/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  77% (109/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  78% (110/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  79% (112/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  80% (113/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  81% (115/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  82% (116/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  83% (118/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  84% (119/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  85% (120/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  86% (122/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  87% (123/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  88% (125/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  89% (126/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  90% (127/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  91% (129/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  92% (130/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  93% (132/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  94% (133/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  95% (134/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  96% (136/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  97% (137/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  98% (139/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects:  99% (140/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects: 100% (141/141), 12.00 KiB | 7.00 KiB/s   
+ DEBUG [016a40d8] 	Receiving objects: 100% (141/141), 61.16 KiB | 7.00 KiB/s, done.
+ DEBUG [016a40d8] 	
+ DEBUG [016a40d8] 	Resolving deltas:   0% (0/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  18% (4/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  22% (5/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  31% (7/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  36% (8/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  40% (9/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  45% (10/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  59% (13/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  72% (16/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  77% (17/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  81% (18/22)   
+ DEBUG [016a40d8] 	Resolving deltas:  86% (19/22)   
+ DEBUG [016a40d8] 	Resolving deltas: 100% (22/22)   
+ DEBUG [016a40d8] 	Resolving deltas: 100% (22/22), done.
+ DEBUG [016a40d8] 	Checking connectivity... 
+ DEBUG [016a40d8] 	done.
+  INFO [016a40d8] Finished in 4.934 seconds with exit status 0 (successful).
+ DEBUG [a9fbdb3b] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [a9fbdb3b] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [a9fbdb3b] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [48e962b1] Running /usr/bin/env git remote update --prune on 188.166.185.120
+ DEBUG [48e962b1] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [48e962b1] 	Fetching origin
+ DEBUG [48e962b1] 	
+  INFO [48e962b1] Finished in 3.674 seconds with exit status 0 (successful).
+ DEBUG [c6bec467] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [c6bec467] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [c6bec467] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [e3e1611f] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526211637 on 188.166.185.120
+ DEBUG [e3e1611f] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526211637 )
+  INFO [e3e1611f] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [f0d87106] Running /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526211637 on 188.166.185.120
+ DEBUG [f0d87106] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526211637 )
+  INFO [f0d87106] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [7ed4d5b0] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [7ed4d5b0] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [7ed4d5b0] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [9129b5ec] Running /usr/bin/env git rev-list --max-count=1 master on 188.166.185.120
+ DEBUG [9129b5ec] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [9129b5ec] 	adb71920d9651a407590a5b88c228d3c2d08ea54
+ DEBUG [9129b5ec] 	
+ DEBUG [9129b5ec] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [0d33d27b] Running if test ! -d /home/rails/apps/dride/releases/20160526211637; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526211637'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [0d33d27b] Command: if test ! -d /home/rails/apps/dride/releases/20160526211637; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526211637'" 1>&2; false; fi
+ DEBUG [0d33d27b] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [736a748c] Running /usr/bin/env echo "adb71920d9651a407590a5b88c228d3c2d08ea54" >> REVISION on 188.166.185.120
+ DEBUG [736a748c] Command: cd /home/rails/apps/dride/releases/20160526211637 && /usr/bin/env echo "adb71920d9651a407590a5b88c228d3c2d08ea54" >> REVISION
+  INFO [736a748c] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [2610fa0c] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526211637/public on 188.166.185.120
+ DEBUG [2610fa0c] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526211637/public
+  INFO [2610fa0c] Finished in 0.142 seconds with exit status 0 (successful).
+ DEBUG [dce5da9e] Running [ -L /home/rails/apps/dride/releases/20160526211637/public/assets ] on 188.166.185.120
+ DEBUG [dce5da9e] Command: [ -L /home/rails/apps/dride/releases/20160526211637/public/assets ]
+ DEBUG [dce5da9e] Finished in 0.142 seconds with exit status 1 (failed).
+ DEBUG [5e0c8e5e] Running [ -d /home/rails/apps/dride/releases/20160526211637/public/assets ] on 188.166.185.120
+ DEBUG [5e0c8e5e] Command: [ -d /home/rails/apps/dride/releases/20160526211637/public/assets ]
+ DEBUG [5e0c8e5e] Finished in 0.142 seconds with exit status 1 (failed).
+  INFO [b466dfca] Running /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526211637/public/assets on 188.166.185.120
+ DEBUG [b466dfca] Command: /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526211637/public/assets
+  INFO [b466dfca] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [9d2b877f] Running if test ! -d /home/rails/apps/dride/releases/20160526211637; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526211637'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [9d2b877f] Command: if test ! -d /home/rails/apps/dride/releases/20160526211637; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526211637'" 1>&2; false; fi
+ DEBUG [9d2b877f] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [209a58b2] Running /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet on 188.166.185.120
+ DEBUG [209a58b2] Command: cd /home/rails/apps/dride/releases/20160526211637 && /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet
+ DEBUG [209a58b2] 	Warning, new version of rvm available '1.27.0', you are using older version '1.26.11'.
+You can disable this warning with:    echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+  INFO [209a58b2] Finished in 203.102 seconds with exit status 0 (successful).
+ DEBUG [243144e5] Running if test ! -d /home/rails/apps/dride/releases/20160526211637; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526211637'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [243144e5] Command: if test ! -d /home/rails/apps/dride/releases/20160526211637; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526211637'" 1>&2; false; fi
+ DEBUG [243144e5] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [1b6bb06b] Running /usr/local/rvm/bin/rvm default do bundle exec rake assets:precompile on 188.166.185.120
+ DEBUG [1b6bb06b] Command: cd /home/rails/apps/dride/releases/20160526211637 && ( export RAILS_ENV="production" ; /usr/local/rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [1b6bb06b] 	I, [2016-05-26T17:20:08.143259 #21831]  INFO -- : Writing /home/rails/apps/dride/releases/20160526211637/public/assets/application-f51a52e2dc61278f78b2b181286b91096cf236e0942e6f57f5c5b8dc24fa28f7.js
+ DEBUG [1b6bb06b] 	
+ DEBUG [1b6bb06b] 	I, [2016-05-26T17:20:08.145408 #21831]  INFO -- : Writing /home/rails/apps/dride/releases/20160526211637/public/assets/application-f51a52e2dc61278f78b2b181286b91096cf236e0942e6f57f5c5b8dc24fa28f7.js.gz
+ DEBUG [1b6bb06b] 	
+ DEBUG [1b6bb06b] 	I, [2016-05-26T17:20:08.155004 #21831]  INFO -- : Writing /home/rails/apps/dride/releases/20160526211637/public/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css
+ DEBUG [1b6bb06b] 	
+ DEBUG [1b6bb06b] 	I, [2016-05-26T17:20:08.155266 #21831]  INFO -- : Writing /home/rails/apps/dride/releases/20160526211637/public/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css.gz
+ DEBUG [1b6bb06b] 	
+  INFO [1b6bb06b] Finished in 7.705 seconds with exit status 0 (successful).
+ DEBUG [96aa82e9] Running if test ! -d /home/rails/apps/dride/releases/20160526211637; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526211637'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [96aa82e9] Command: if test ! -d /home/rails/apps/dride/releases/20160526211637; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526211637'" 1>&2; false; fi
+ DEBUG [96aa82e9] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [c86ab4a6] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526211637/assets_manifest_backup on 188.166.185.120
+ DEBUG [c86ab4a6] Command: cd /home/rails/apps/dride/releases/20160526211637 && /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526211637/assets_manifest_backup
+  INFO [c86ab4a6] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [3c16cb27] Running /usr/bin/env ls /home/rails/apps/dride/releases/20160526211637/public/assets/.sprockets-manifest* on 188.166.185.120
+ DEBUG [3c16cb27] Command: cd /home/rails/apps/dride/releases/20160526211637 && /usr/bin/env ls /home/rails/apps/dride/releases/20160526211637/public/assets/.sprockets-manifest*
+ DEBUG [3c16cb27] 	/home/rails/apps/dride/releases/20160526211637/public/assets/.sprockets-manifest-e2ad8fe4853d291e8cfe719e7668cb3c.json
+ DEBUG [3c16cb27] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [2dddeb21] Running /usr/bin/env ls /home/rails/apps/dride/releases/20160526211637/public/assets/.sprockets-manifest* on 188.166.185.120
+ DEBUG [2dddeb21] Command: cd /home/rails/apps/dride/releases/20160526211637 && /usr/bin/env ls /home/rails/apps/dride/releases/20160526211637/public/assets/.sprockets-manifest*
+ DEBUG [2dddeb21] 	/home/rails/apps/dride/releases/20160526211637/public/assets/.sprockets-manifest-e2ad8fe4853d291e8cfe719e7668cb3c.json
+ DEBUG [2dddeb21] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [7a1351c2] Running /usr/bin/env cp /home/rails/apps/dride/releases/20160526211637/public/assets/.sprockets-manifest-e2ad8fe4853d291e8cfe719e7668cb3c.json /home/rails/apps/dride/releases/20160526211637/assets_manifest_backup on 188.166.185.120
+ DEBUG [7a1351c2] Command: cd /home/rails/apps/dride/releases/20160526211637 && /usr/bin/env cp /home/rails/apps/dride/releases/20160526211637/public/assets/.sprockets-manifest-e2ad8fe4853d291e8cfe719e7668cb3c.json /home/rails/apps/dride/releases/20160526211637/assets_manifest_backup
+  INFO [7a1351c2] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [47271d1a] Running if test ! -d /home/rails/apps/dride/releases/20160526211637; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526211637'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [47271d1a] Command: if test ! -d /home/rails/apps/dride/releases/20160526211637; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526211637'" 1>&2; false; fi
+ DEBUG [47271d1a] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [04122c62] Running /usr/local/rvm/bin/rvm default do bundle exec rake db:migrate on 188.166.185.120
+ DEBUG [04122c62] Command: cd /home/rails/apps/dride/releases/20160526211637 && ( export RAILS_ENV="production" ; /usr/local/rvm/bin/rvm default do bundle exec rake db:migrate )
+  INFO [04122c62] Finished in 3.563 seconds with exit status 0 (successful).
+  INFO [711f4852] Running /usr/bin/env ln -s /home/rails/apps/dride/releases/20160526211637 /home/rails/apps/dride/releases/current on 188.166.185.120
+ DEBUG [711f4852] Command: /usr/bin/env ln -s /home/rails/apps/dride/releases/20160526211637 /home/rails/apps/dride/releases/current
+  INFO [711f4852] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [9393dbcb] Running /usr/bin/env mv /home/rails/apps/dride/releases/current /home/rails/apps/dride on 188.166.185.120
+ DEBUG [9393dbcb] Command: /usr/bin/env mv /home/rails/apps/dride/releases/current /home/rails/apps/dride
+  INFO [9393dbcb] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [2056b788] Running /usr/bin/env ls -xtr /home/rails/apps/dride/releases on 188.166.185.120
+ DEBUG [2056b788] Command: /usr/bin/env ls -xtr /home/rails/apps/dride/releases
+ DEBUG [2056b788] 	20160526211637
+ DEBUG [2056b788] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [25cba7ba] Running mkdir /home/rails/apps/dride/shared/tmp/sockets -p on 188.166.185.120
+ DEBUG [25cba7ba] Command: mkdir /home/rails/apps/dride/shared/tmp/sockets -p
+  INFO [25cba7ba] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [3a5586a2] Running mkdir /home/rails/apps/dride/shared/tmp/pids -p on 188.166.185.120
+ DEBUG [3a5586a2] Command: mkdir /home/rails/apps/dride/shared/tmp/pids -p
+  INFO [3a5586a2] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [5bd648d0] Running [ -f /home/rails/apps/dride/shared/puma.rb ] on 188.166.185.120
+ DEBUG [5bd648d0] Command: [ -f /home/rails/apps/dride/shared/puma.rb ]
+ DEBUG [5bd648d0] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO using conf file /home/rails/apps/dride/shared/puma.rb
+ DEBUG [a496286b] Running if test ! -d /home/rails/apps/dride/current; then echo "Directory does not exist '/home/rails/apps/dride/current'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [a496286b] Command: if test ! -d /home/rails/apps/dride/current; then echo "Directory does not exist '/home/rails/apps/dride/current'" 1>&2; false; fi
+ DEBUG [a496286b] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [07dff3ee] Running /usr/local/rvm/bin/rvm default do bundle exec puma -C /home/rails/apps/dride/shared/puma.rb --daemon on 188.166.185.120
+ DEBUG [07dff3ee] Command: cd /home/rails/apps/dride/current && ( export RACK_ENV="production" ; /usr/local/rvm/bin/rvm default do bundle exec puma -C /home/rails/apps/dride/shared/puma.rb --daemon )
+ DEBUG [07dff3ee] 	Puma starting in single mode...
+* Version 3.4.0 (ruby 2.2.1-p85), codename: Owl Bowl Brawl
+* Min threads: 4, max threads: 16
+* Environment: production
+* Daemonizing...
+  INFO [07dff3ee] Finished in 1.141 seconds with exit status 0 (successful).
+ DEBUG [e08c7f14] Running if test ! -d /home/rails/apps/dride/current; then echo "Directory does not exist '/home/rails/apps/dride/current'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [e08c7f14] Command: if test ! -d /home/rails/apps/dride/current; then echo "Directory does not exist '/home/rails/apps/dride/current'" 1>&2; false; fi
+ DEBUG [e08c7f14] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [acececb5] Running [ -f /home/rails/apps/dride/shared/tmp/pids/puma.pid ] on 188.166.185.120
+ DEBUG [acececb5] Command: [ -f /home/rails/apps/dride/shared/tmp/pids/puma.pid ]
+ DEBUG [acececb5] Finished in 0.140 seconds with exit status 1 (failed).
+ DEBUG [d978ca74] Running if test ! -d /home/rails/apps/dride/releases; then echo "Directory does not exist '/home/rails/apps/dride/releases'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [d978ca74] Command: if test ! -d /home/rails/apps/dride/releases; then echo "Directory does not exist '/home/rails/apps/dride/releases'" 1>&2; false; fi
+ DEBUG [d978ca74] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [65e76945] Running /usr/bin/env echo "Branch master (at adb71920d9651a407590a5b88c228d3c2d08ea54) deployed as release 20160526211637 by vinodrathod" >> /home/rails/apps/dride/revisions.log on 188.166.185.120
+ DEBUG [65e76945] Command: cd /home/rails/apps/dride/releases && /usr/bin/env echo "Branch master (at adb71920d9651a407590a5b88c228d3c2d08ea54) deployed as release 20160526211637 by vinodrathod" >> /home/rails/apps/dride/revisions.log
+  INFO [65e76945] Finished in 0.142 seconds with exit status 0 (successful).
