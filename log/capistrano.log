@@ -1,0 +1,522 @@
+# Logfile created on 2016-05-27 01:10:26 +0530 by logger.rb/47272
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-05-27 01:10:26 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [921956b1] Running [ -d ~/.rvm ] on 188.166.185.120
+ DEBUG [921956b1] Command: [ -d ~/.rvm ]
+ DEBUG [921956b1] Finished in 65.275 seconds with exit status 1 (failed).
+ DEBUG [f2e94a5e] Running [ -d /usr/local/rvm ] on 188.166.185.120
+ DEBUG [f2e94a5e] Command: [ -d /usr/local/rvm ]
+ DEBUG [f2e94a5e] Finished in 0.129 seconds with exit status 0 (successful).
+ DEBUG [f296ecb5] Running /usr/local/rvm/bin/rvm version on 188.166.185.120
+ DEBUG [f296ecb5] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [f296ecb5] 	rvm 1.26.11 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [f296ecb5] 	
+ DEBUG [f296ecb5] Finished in 0.512 seconds with exit status 0 (successful).
+ DEBUG [57f9470e] Running /usr/local/rvm/bin/rvm current on 188.166.185.120
+ DEBUG [57f9470e] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [57f9470e] 	ruby-2.2.1
+ DEBUG [57f9470e] Finished in 0.409 seconds with exit status 0 (successful).
+ DEBUG [a04fae66] Running /usr/local/rvm/bin/rvm default do ruby --version on 188.166.185.120
+ DEBUG [a04fae66] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [a04fae66] 	ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+ DEBUG [a04fae66] Finished in 0.512 seconds with exit status 0 (successful).
+  INFO [2ba101bf] Running /usr/bin/env mkdir -p /tmp/dride/ on 188.166.185.120
+ DEBUG [2ba101bf] Command: /usr/bin/env mkdir -p /tmp/dride/
+  INFO [2ba101bf] Finished in 0.130 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/dride/git-ssh.sh 0.0%
+  INFO Uploading /tmp/dride/git-ssh.sh 100.0%
+  INFO [95fbea81] Running /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh on 188.166.185.120
+ DEBUG [95fbea81] Command: /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh
+  INFO [95fbea81] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [12ad26a9] Running /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git on 188.166.185.120
+ DEBUG [12ad26a9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git )
+ DEBUG [12ad26a9] 	Warning: Permanently added 'github.com,192.30.252.129' (RSA) to the list of known hosts.
+ DEBUG [12ad26a9] 	
+ DEBUG [12ad26a9] 	Permission denied (publickey).
+ DEBUG [12ad26a9] 	
+ DEBUG [12ad26a9] 	fatal: Could not read from remote repository.
+ DEBUG [12ad26a9] 	
+ DEBUG [12ad26a9] 	
+ DEBUG [12ad26a9] 	Please make sure you have the correct access rights
+ DEBUG [12ad26a9] 	
+ DEBUG [12ad26a9] 	and the repository exists.
+ DEBUG [12ad26a9] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-05-27 01:29:13 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [15a67748] Running [ -d ~/.rvm ] on 188.166.185.120
+ DEBUG [15a67748] Command: [ -d ~/.rvm ]
+ DEBUG [15a67748] Finished in 19.072 seconds with exit status 1 (failed).
+ DEBUG [de1073ff] Running [ -d /usr/local/rvm ] on 188.166.185.120
+ DEBUG [de1073ff] Command: [ -d /usr/local/rvm ]
+ DEBUG [de1073ff] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [526988c9] Running /usr/local/rvm/bin/rvm version on 188.166.185.120
+ DEBUG [526988c9] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [526988c9] 	rvm 1.26.11 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [526988c9] 	
+ DEBUG [526988c9] Finished in 0.349 seconds with exit status 0 (successful).
+ DEBUG [66684ade] Running /usr/local/rvm/bin/rvm current on 188.166.185.120
+ DEBUG [66684ade] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [66684ade] 	ruby-2.2.1
+ DEBUG [66684ade] 	
+ DEBUG [66684ade] Finished in 0.350 seconds with exit status 0 (successful).
+ DEBUG [315dfc89] Running /usr/local/rvm/bin/rvm default do ruby --version on 188.166.185.120
+ DEBUG [315dfc89] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [315dfc89] 	ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+ DEBUG [315dfc89] Finished in 0.610 seconds with exit status 0 (successful).
+  INFO [0e64f00c] Running /usr/bin/env mkdir -p /tmp/dride/ on 188.166.185.120
+ DEBUG [0e64f00c] Command: /usr/bin/env mkdir -p /tmp/dride/
+  INFO [0e64f00c] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/dride/git-ssh.sh 0.0%
+  INFO Uploading /tmp/dride/git-ssh.sh 100.0%
+  INFO [898dc82f] Running /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh on 188.166.185.120
+ DEBUG [898dc82f] Command: /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh
+  INFO [898dc82f] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [673449fc] Running /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git on 188.166.185.120
+ DEBUG [673449fc] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git )
+ DEBUG [673449fc] 	Permission denied (publickey).
+ DEBUG [673449fc] 	
+ DEBUG [673449fc] 	fatal: Could not read from remote repository.
+ DEBUG [673449fc] 	
+ DEBUG [673449fc] 	
+ DEBUG [673449fc] 	Please make sure you have the correct access rights
+ DEBUG [673449fc] 	
+ DEBUG [673449fc] 	and the repository exists.
+ DEBUG [673449fc] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-05-27 01:32:24 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a26bd6d7] Running [ -d ~/.rvm ] on 188.166.185.120
+ DEBUG [a26bd6d7] Command: [ -d ~/.rvm ]
+ DEBUG [a26bd6d7] Finished in 14.305 seconds with exit status 1 (failed).
+ DEBUG [c95aae59] Running [ -d /usr/local/rvm ] on 188.166.185.120
+ DEBUG [c95aae59] Command: [ -d /usr/local/rvm ]
+ DEBUG [c95aae59] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [00a83ed4] Running /usr/local/rvm/bin/rvm version on 188.166.185.120
+ DEBUG [00a83ed4] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [00a83ed4] 	rvm 1.26.11 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [00a83ed4] 	
+ DEBUG [00a83ed4] Finished in 0.359 seconds with exit status 0 (successful).
+ DEBUG [e182ff10] Running /usr/local/rvm/bin/rvm current on 188.166.185.120
+ DEBUG [e182ff10] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [e182ff10] 	ruby-2.2.1
+ DEBUG [e182ff10] 	
+ DEBUG [e182ff10] Finished in 0.398 seconds with exit status 0 (successful).
+ DEBUG [1a70fecd] Running /usr/local/rvm/bin/rvm default do ruby --version on 188.166.185.120
+ DEBUG [1a70fecd] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [1a70fecd] 	ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+ DEBUG [1a70fecd] Finished in 0.492 seconds with exit status 0 (successful).
+  INFO [98f590ea] Running /usr/bin/env mkdir -p /tmp/dride/ on 188.166.185.120
+ DEBUG [98f590ea] Command: /usr/bin/env mkdir -p /tmp/dride/
+  INFO [98f590ea] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/dride/git-ssh.sh 0.0%
+  INFO Uploading /tmp/dride/git-ssh.sh 100.0%
+  INFO [220d335a] Running /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh on 188.166.185.120
+ DEBUG [220d335a] Command: /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh
+  INFO [220d335a] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [0cdd9428] Running /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git on 188.166.185.120
+ DEBUG [0cdd9428] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git )
+ DEBUG [0cdd9428] 	Warning: Permanently added the RSA host key for IP address '192.30.252.122' to the list of known hosts.
+ DEBUG [0cdd9428] 	1304f9a5a59ae246127ad470caace4d45bed3e00
+ DEBUG [0cdd9428] 		
+ DEBUG [0cdd9428] 	refs/heads/master
+ DEBUG [0cdd9428] 	
+  INFO [0cdd9428] Finished in 3.779 seconds with exit status 0 (successful).
+  INFO [110d9800] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases on 188.166.185.120
+ DEBUG [110d9800] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases
+  INFO [110d9800] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [94a1b770] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets on 188.166.185.120
+ DEBUG [94a1b770] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets
+  INFO [94a1b770] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [c88d7c0e] Running [ -f /home/rails/apps/dride/shared/puma.rb ] on 188.166.185.120
+ DEBUG [c88d7c0e] Command: [ -f /home/rails/apps/dride/shared/puma.rb ]
+ DEBUG [c88d7c0e] Finished in 0.143 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /home/rails/apps/dride/shared/puma.rb 0.0%
+  INFO Uploading /home/rails/apps/dride/shared/puma.rb 100.0%
+  INFO puma.rb generated
+ DEBUG [1e7ee92d] Running [ -f /home/rails/apps/dride/current/REVISION ] on 188.166.185.120
+ DEBUG [1e7ee92d] Command: [ -f /home/rails/apps/dride/current/REVISION ]
+ DEBUG [1e7ee92d] Finished in 0.141 seconds with exit status 1 (failed).
+ DEBUG [784615ef] Running [ -f /home/rails/apps/dride/repo/HEAD ] on 188.166.185.120
+ DEBUG [784615ef] Command: [ -f /home/rails/apps/dride/repo/HEAD ]
+ DEBUG [784615ef] Finished in 0.141 seconds with exit status 1 (failed).
+ DEBUG [cfdf979c] Running if test ! -d /home/rails/apps/dride; then echo "Directory does not exist '/home/rails/apps/dride'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [cfdf979c] Command: if test ! -d /home/rails/apps/dride; then echo "Directory does not exist '/home/rails/apps/dride'" 1>&2; false; fi
+ DEBUG [cfdf979c] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [5094bbe3] Running /usr/bin/env git clone --mirror git@github.com:vinod93/dride2016.git /home/rails/apps/dride/repo on 188.166.185.120
+ DEBUG [5094bbe3] Command: cd /home/rails/apps/dride && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git clone --mirror git@github.com:vinod93/dride2016.git /home/rails/apps/dride/repo )
+ DEBUG [5094bbe3] 	Cloning into bare repository '/home/rails/apps/dride/repo'...
+ DEBUG [5094bbe3] 	
+ DEBUG [5094bbe3] 	remote: Counting objects: 122, done.[K
+ DEBUG [5094bbe3] 	
+ DEBUG [5094bbe3] 	remote: Compressing objects:   1% (1/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:   2% (2/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:   3% (3/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:
+ DEBUG [5094bbe3] 	   4% (4/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:   5% (5/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:   6% (6/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:   7% (7/88)   [K
+ DEBUG [5094bbe3] 	remote: Comp
+ DEBUG [5094bbe3] 	ressing objects:   9% (8/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  10% (9/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  11% (10/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  1
+ DEBUG [5094bbe3] 	2% (11/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  13% (12/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  14% (13/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  15% (14/88)   [K
+ DEBUG [5094bbe3] 	remote: Com
+ DEBUG [5094bbe3] 	pressing objects:  17% (15/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  18% (16/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  19% (17/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:
+ DEBUG [5094bbe3] 	  20% (18/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  21% (19/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  22% (20/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  23% (21/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  25% (22/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  26% (23/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  27% (24/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objec
+ DEBUG [5094bbe3] 	ts:  28% (25/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  29% (26/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  30% (27/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  31% (28/88) 
+ DEBUG [5094bbe3] 	  [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  32% (29/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  34% (30/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  35% (31/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objec
+ DEBUG [5094bbe3] 	ts:  36% (32/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  37% (33/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  38% (34/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  39% (35/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  40% (36/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  42% (37/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objec
+ DEBUG [5094bbe3] 	ts:  43% (38/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  44% (39/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  45% (40/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  46% (41/88) 
+ DEBUG [5094bbe3] 	  [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  47% (42/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  48% (43/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  50% (44/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing ob
+ DEBUG [5094bbe3] 	jects:  51% (45/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  52% (46/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  53% (47/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  54% (48/8
+ DEBUG [5094bbe3] 	8)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  55% (49/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  56% (50/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  57% (51/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing
+ DEBUG [5094bbe3] 	 objects:  59% (52/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  60% (53/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  61% (54/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  62% (5
+ DEBUG [5094bbe3] 	5/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  63% (56/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  64% (57/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  65% (58/88)   [K
+ DEBUG [5094bbe3] 	remote: Compress
+ DEBUG [5094bbe3] 	ing objects:  67% (59/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  68% (60/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  69% (61/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  70%
+ DEBUG [5094bbe3] 	 (62/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  71% (63/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  72% (64/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  73% (65/88)   [K
+ DEBUG [5094bbe3] 	remote: Compr
+ DEBUG [5094bbe3] 	essing objects:  75% (66/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  76% (67/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  77% (68/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  78% (69/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  79% (70/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  80% (71/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  81% (72/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  82% (73/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  84% (74/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  85% (75/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  86% (76/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objec
+ DEBUG [5094bbe3] 	ts:  87% (77/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  88% (78/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  89% (79/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  90% (80/88) 
+ DEBUG [5094bbe3] 	  [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  92% (81/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  93% (82/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  94% (83/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing ob
+ DEBUG [5094bbe3] 	jects:  95% (84/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  96% (85/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  97% (86/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects:  98% (87/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects: 100% (88/88)   [K
+ DEBUG [5094bbe3] 	remote: Compressing objects: 100% (88/88), done.[K
+ DEBUG [5094bbe3] 	
+ DEBUG [5094bbe3] 	Receiving objects:   0% (1/122)   
+ DEBUG [5094bbe3] 	Receiving objects:   1% (2/122)   
+ DEBUG [5094bbe3] 	Receiving objects:   2% (3/122)   
+ DEBUG [5094bbe3] 	Receiving objects:   3% (4/122)   
+ DEBUG [5094bbe3] 	Receiving objects:   4% (5/122)   
+ DEBUG [5094bbe3] 	Receiving objects:   5% (7/122)   
+ DEBUG [5094bbe3] 	Receiving objects:   6% (8/122)   
+ DEBUG [5094bbe3] 	Receiving objects:   7% (9/122)   
+ DEBUG [5094bbe3] 	Receiving objects:   8% (10/122)   
+ DEBUG [5094bbe3] 	Receiving objects:   9% (11/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  10% (13/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  11% (14/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  12% (15/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  13% (16/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  14% (18/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  15% (19/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  16% (20/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  17% (21/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  18% (22/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  19% (24/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  20% (25/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  21% (26/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  22% (27/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  23% (29/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  24% (30/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  25% (31/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  26% (32/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  27% (33/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  28% (35/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  29% (36/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  30% (37/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  31% (38/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  32% (40/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  33% (41/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  34% (42/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  35% (43/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  36% (44/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  37% (46/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  38% (47/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  39% (48/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  40% (49/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  41% (51/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  42% (52/122)   
+ DEBUG [5094bbe3] 	remote: Total 122 (delta 9), reused 122 (delta 9), pack-reused 0[K
+ DEBUG [5094bbe3] 	
+ DEBUG [5094bbe3] 	Receiving objects:  43% (53/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  44% (54/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  45% (55/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  46% (57/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  47% (58/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  48% (59/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  49% (60/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  50% (61/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  51% (63/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  52% (64/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  53% (65/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  54% (66/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  55% (68/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  56% (69/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  57% (70/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  58% (71/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  59% (72/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  60% (74/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  61% (75/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  62% (76/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  63% (77/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  64% (79/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  65% (80/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  66% (81/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  67% (82/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  68% (83/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  69% (85/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  70% (86/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  71% (87/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  72% (88/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  73% (90/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  74% (91/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  75% (92/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  76% (93/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  77% (94/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  78% (96/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  79% (97/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  80% (98/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  81% (99/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  82% (101/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  83% (102/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  84% (103/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  85% (104/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  86% (105/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  87% (107/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  88% (108/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  89% (109/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  90% (110/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  91% (112/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  92% (113/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  93% (114/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  94% (115/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  95% (116/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  96% (118/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  97% (119/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  98% (120/122)   
+ DEBUG [5094bbe3] 	Receiving objects:  99% (121/122)   
+ DEBUG [5094bbe3] 	Receiving objects: 100% (122/122)   
+ DEBUG [5094bbe3] 	Receiving objects: 100% (122/122), 48.54 KiB | 0 bytes/s, done.
+ DEBUG [5094bbe3] 	
+ DEBUG [5094bbe3] 	Resolving deltas:   0% (0/9)   
+ DEBUG [5094bbe3] 	Resolving deltas:  11% (1/9)   
+ DEBUG [5094bbe3] 	Resolving deltas:  22% (2/9)   
+ DEBUG [5094bbe3] 	Resolving deltas:  33% (3/9)   
+ DEBUG [5094bbe3] 	Resolving deltas:  77% (7/9)   
+ DEBUG [5094bbe3] 	Resolving deltas:  88% (8/9)   
+ DEBUG [5094bbe3] 	Resolving deltas: 100% (9/9)   
+ DEBUG [5094bbe3] 	Resolving deltas: 100% (9/9), done.
+ DEBUG [5094bbe3] 	
+ DEBUG [5094bbe3] 	Checking connectivity... 
+ DEBUG [5094bbe3] 	done.
+ DEBUG [5094bbe3] 	
+  INFO [5094bbe3] Finished in 4.319 seconds with exit status 0 (successful).
+ DEBUG [acfcf452] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [acfcf452] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [acfcf452] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [d9220842] Running /usr/bin/env git remote update --prune on 188.166.185.120
+ DEBUG [d9220842] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [d9220842] 	Fetching origin
+ DEBUG [d9220842] 	
+  INFO [d9220842] Finished in 3.712 seconds with exit status 0 (successful).
+ DEBUG [cb8896a2] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [cb8896a2] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [cb8896a2] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [5f465da0] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526200246 on 188.166.185.120
+ DEBUG [5f465da0] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526200246 )
+  INFO [5f465da0] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [10d0e6ab] Running /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526200246 on 188.166.185.120
+ DEBUG [10d0e6ab] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526200246 )
+  INFO [10d0e6ab] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [a4956662] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [a4956662] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [a4956662] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [629b3ddf] Running /usr/bin/env git rev-list --max-count=1 master on 188.166.185.120
+ DEBUG [629b3ddf] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [629b3ddf] 	1304f9a5a59ae246127ad470caace4d45bed3e00
+ DEBUG [629b3ddf] 	
+ DEBUG [629b3ddf] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [38d5a50e] Running if test ! -d /home/rails/apps/dride/releases/20160526200246; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526200246'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [38d5a50e] Command: if test ! -d /home/rails/apps/dride/releases/20160526200246; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526200246'" 1>&2; false; fi
+ DEBUG [38d5a50e] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [ad9b994e] Running /usr/bin/env echo "1304f9a5a59ae246127ad470caace4d45bed3e00" >> REVISION on 188.166.185.120
+ DEBUG [ad9b994e] Command: cd /home/rails/apps/dride/releases/20160526200246 && /usr/bin/env echo "1304f9a5a59ae246127ad470caace4d45bed3e00" >> REVISION
+  INFO [ad9b994e] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [a621c2df] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526200246/public on 188.166.185.120
+ DEBUG [a621c2df] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526200246/public
+  INFO [a621c2df] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [61fdfa26] Running [ -L /home/rails/apps/dride/releases/20160526200246/public/assets ] on 188.166.185.120
+ DEBUG [61fdfa26] Command: [ -L /home/rails/apps/dride/releases/20160526200246/public/assets ]
+ DEBUG [61fdfa26] Finished in 0.143 seconds with exit status 1 (failed).
+ DEBUG [5bd1d980] Running [ -d /home/rails/apps/dride/releases/20160526200246/public/assets ] on 188.166.185.120
+ DEBUG [5bd1d980] Command: [ -d /home/rails/apps/dride/releases/20160526200246/public/assets ]
+ DEBUG [5bd1d980] Finished in 0.141 seconds with exit status 1 (failed).
+  INFO [ffde106e] Running /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526200246/public/assets on 188.166.185.120
+ DEBUG [ffde106e] Command: /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526200246/public/assets
+  INFO [ffde106e] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [ee04651d] Running if test ! -d /home/rails/apps/dride/releases/20160526200246; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526200246'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [ee04651d] Command: if test ! -d /home/rails/apps/dride/releases/20160526200246; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526200246'" 1>&2; false; fi
+ DEBUG [ee04651d] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [8e56590a] Running /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet on 188.166.185.120
+ DEBUG [8e56590a] Command: cd /home/rails/apps/dride/releases/20160526200246 && /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet
+ DEBUG [8e56590a] 	Warning, new version of rvm available '1.27.0', you are using older version '1.26.11'.
+You can disable this warning with:    echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+  INFO [8e56590a] Finished in 203.094 seconds with exit status 0 (successful).
+ DEBUG [2f6e0097] Running if test ! -d /home/rails/apps/dride/releases/20160526200246; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526200246'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [2f6e0097] Command: if test ! -d /home/rails/apps/dride/releases/20160526200246; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526200246'" 1>&2; false; fi
+ DEBUG [2f6e0097] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [88b7be44] Running /usr/local/rvm/bin/rvm default do bundle exec rake assets:precompile on 188.166.185.120
+ DEBUG [88b7be44] Command: cd /home/rails/apps/dride/releases/20160526200246 && ( export RAILS_ENV="production" ; /usr/local/rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [88b7be44] 	rake aborted!
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	Devise.secret_key was not set. Please add the following to your Devise initializer:
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	  config.secret_key = 'a469c6deb4bf7b23bdd70c94e934b567c08ce0fd1d44c93a7f5d1ab78331bfae7ecca88670565a5584d2132caddcd9313b028a222555c77a7fc73cbaf4705cad'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	Please ensure you restarted your application after installing Devise or setting the key.
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/devise-4.1.1/lib/devise/rails/routes.rb:498:in `raise_no_secret_key'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/devise-4.1.1/lib/devise/rails/routes.rb:226:in `devise_for'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/releases/20160526200246/config/routes.rb:5:in `block in <top (required)>'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/route_set.rb:434:in `instance_exec'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/route_set.rb:434:in `eval_block'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/routing/route_set.rb:412:in `draw'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/releases/20160526200246/config/routes.rb:3:in `<top (required)>'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `each'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `load_paths'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:16:in `reload!'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:26:in `block in updater'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_
+ DEBUG [88b7be44] 	support/file_update_checker.rb:75:in `call'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `execute'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:27:in `updater'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application/finisher.rb:69:in `block in <module:Finisher>'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/releases/20160526200246/config/environment.rb:5:in `<top (required)>'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `block in require'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:274:in `require'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:328:in `require_environment!'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/railties-4.2.4/lib/rails/application.rb:457:in `block in run_tasks_blocks'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	/home/rails/apps/dride/share
+ DEBUG [88b7be44] 	d/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.4/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	Tasks: TOP => environment
+ DEBUG [88b7be44] 	
+ DEBUG [88b7be44] 	(See full trace by running task with --trace)
+ DEBUG [88b7be44] 	
