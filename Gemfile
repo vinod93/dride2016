@@ -62,6 +62,7 @@ end
 gem "devise"
 gem 'puma'
 gem 'turbolinks'
+gem 'newrelic_rpm'
 
 
 

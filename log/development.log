@@ -498,3 +498,180 @@ MONGODB | localhost:27017 | dride_development.find | STARTED | {"find"=>"users",
 MONGODB | localhost:27017 | dride_development.find | SUCCEEDED | 0.0004s
 [active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.52ms)
 Completed 200 OK in 15ms (Views: 8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 04:23:40 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 23ms (Views: 13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 04:24:01 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
+Completed 200 OK in 5ms (Views: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 04:24:05 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
+Completed 200 OK in 5ms (Views: 3.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-05-27 04:24:07 +0530
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.15.2.317) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  /Users/vinodrathod/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle'
+  /Users/vinodrathod/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue in block (2 levels) in start'
+  /Users/vinodrathod/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in `block (2 levels) in start'
+  /Users/vinodrathod/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `each'
+  /Users/vinodrathod/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `block in start'
+  /Users/vinodrathod/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `loop'
+  /Users/vinodrathod/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `start'
+  /Users/vinodrathod/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in `run'
+  /Users/vinodrathod/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.6ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.8ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.0ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.9ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-05-27 04:24:29 +0530
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"subdomain"=>"api", "id"=>"1"}
+MONGODB | Unsupported client option 'raise_not_found_error'. It will be ignored.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+Completed 500 Internal Server Error in 30171ms
+
+Mongo::Error::NoServerAvailable (No server is available matching preference: #<Mongo::ServerSelector::Primary:0x70258085970100 tag_sets=[] server_selection_timeout=30 local_threshold=0.015>):
+  app/controllers/api/v1/users_controller.rb:5:in `show'
+
+
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.1ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.6ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/vinodrathod/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.2ms)
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
