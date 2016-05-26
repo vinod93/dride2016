@@ -57,7 +57,7 @@ lock '3.5.0'
 # Change these
 server '188.166.185.120', port: 22, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@example.com:username/appname.git'
+set :repo_url,        'git@github.com:vinod93/dride2016.git'
 set :application,     'dride'
 set :user,            'rails'
 set :puma_threads,    [4, 16]
