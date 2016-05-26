@@ -1,0 +1,749 @@
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"aisha@rutherford.name"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.010235000000000001s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"marian@brown.us"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.010623s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5742f4f33085b3d31e9bf6ce'), "name"=>"", "email"=>"marian@brown.us", "encrypted_password"=>"$2a$04$/md4VMvwkIcDv90/IggZ9.ArIGUd2/FOX9OpBBdsjwUlmwksuKS32", "sign_in_count"=>0}], "ordered"=>true}
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.067264s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"keara_bergstrom@koelpinschroeder.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.006628s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5742f4f33085b3d31e9bf6cf'), "name"=>"", "email"=>"keara_bergstrom@koelpinschroeder.com", "encrypted_password"=>"$2a$04$wEeMxPiDMG6ldzzD4av0FOjYOguHTo8emPcu2sSG85zJSXjhWcm3y", "sign_in_count"=>0...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.003392s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"karli@rodriguezraynor.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000776s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5742f5cb3085b3d3659afa66'), "name"=>"", "email"=>"karli@rodriguezraynor.co.uk", "encrypted_password"=>"$2a$04$fjuMDauDz7fV/CdTb1hpJ.7bUp1YRIOcKn6pe5XANxIKiuGVo0/GK", "sign_in_count"=>0}], "orde...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00034300000000000004s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"5742f5cb3085b3d3659afa66"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5742f5cb3085b3d3659afa66')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.002578s
+Completed 500 Internal Server Error in 23ms
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"emory@jenkinsoberbrunner.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000502s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5742f5cb3085b3d3659afa67'), "name"=>"", "email"=>"emory@jenkinsoberbrunner.co.uk", "encrypted_password"=>"$2a$04$adCPEicudjJMd1MB.b5zUeOjI7m2m/CBx9o.BhHBJMQhrzeawNE7O", "sign_in_count"=>0}], "o...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00033200000000000005s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"5742f5cb3085b3d3659afa67"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5742f5cb3085b3d3659afa67')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000349s
+Completed 500 Internal Server Error in 2ms
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"glenda_steuber@jones.name"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.018779999999999998s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57431b733085b3dd95e89a9f'), "name"=>"", "email"=>"glenda_steuber@jones.name", "encrypted_password"=>"$2a$04$k9MXq980lEg6DU.n7PXCsOnZqIdyX2jZ.fRaZg4UfOPwanmqwHeUC", "sign_in_count"=>0}], "ordere...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.014099s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57431b733085b3dd95e89a9f"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57431b733085b3dd95e89a9f')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0011740000000000001s
+Completed 500 Internal Server Error in 15ms
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"kennedi@buckridgeblanda.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0005260000000000001s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57431b733085b3dd95e89aa0'), "name"=>"", "email"=>"kennedi@buckridgeblanda.com", "encrypted_password"=>"$2a$04$nuBbFCyZ36FHWdXIv0VKKunbr4vODrGCVzQDPJPpbZVsQ8x6M49Gu", "sign_in_count"=>0}], "orde...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000363s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57431b733085b3dd95e89aa0"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57431b733085b3dd95e89aa0')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00048100000000000004s
+Completed 500 Internal Server Error in 2ms
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"zelda_cremin@considine.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00116s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57431b953085b3ddb755f7ae'), "name"=>"", "email"=>"zelda_cremin@considine.ca", "encrypted_password"=>"$2a$04$g5lmdNikNqlWRpYHR.KdYugblqthAqQSNdJ5e4cyvcsZi0a1a63ou", "sign_in_count"=>0}], "ordere...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000444s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57431b953085b3ddb755f7ae"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57431b953085b3ddb755f7ae')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000433s
+Completed 500 Internal Server Error in 19ms
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"ashly.hermiston@monahan.name"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00044s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57431b953085b3ddb755f7af'), "name"=>"", "email"=>"ashly.hermiston@monahan.name", "encrypted_password"=>"$2a$04$nzYy4DLjvdtVTfmTOjUp4OmPW./1KY.fymYv5gXLBdGp1dwpWvE/G", "sign_in_count"=>0}], "ord...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000368s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57431b953085b3ddb755f7af"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57431b953085b3ddb755f7af')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000306s
+Completed 500 Internal Server Error in 2ms
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"vergie@hamill.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000834s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57431de33085b3de671b57ff'), "name"=>"", "email"=>"vergie@hamill.co.uk", "encrypted_password"=>"$2a$04$AGT0hpm/EZ.FL1HoofQeJOpqlrr4hYPNTRaRyfVtDUQSKunmUQVJW", "sign_in_count"=>0}], "ordered"=>tr...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000342s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57431de33085b3de671b57ff"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57431de33085b3de671b57ff')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000433s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.78ms)
+Completed 200 OK in 30ms (Views: 10.9ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"osbaldo@daughertygreen.us"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00043599999999999997s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57431de33085b3de671b5800'), "name"=>"", "email"=>"osbaldo@daughertygreen.us", "encrypted_password"=>"$2a$04$hg2LsF0HCA9uSH2yHodo8O9E4mRrEqqmpx4ReFVBLmkYC8Ijvthwa", "sign_in_count"=>0}], "ordere...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00027s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57431de33085b3de671b5800"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57431de33085b3de671b5800')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000307s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.23ms)
+Completed 200 OK in 2ms (Views: 0.7ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"veronica.paucek@lueilwitz.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000767s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57431e723085b3dea23d9887'), "name"=>"", "email"=>"veronica.paucek@lueilwitz.info", "encrypted_password"=>"$2a$04$Nu4GEusNyUis2rjXEIkgEOjD4xaY3CoBnQqCoDOle5t5nlUAH7oGi", "sign_in_count"=>0}], "o...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00037600000000000003s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57431e723085b3dea23d9887"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57431e723085b3dea23d9887')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000424s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.39ms)
+Completed 200 OK in 29ms (Views: 10.1ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"rosamond@maggio.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000605s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57431e723085b3dea23d9888'), "name"=>"", "email"=>"rosamond@maggio.ca", "encrypted_password"=>"$2a$04$O.ahFddFI.04ALBdIuLBJeMo7d.xWZlbF1PTjOSNfaitpIK2PqnYm", "sign_in_count"=>0}], "ordered"=>tru...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000274s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57431e723085b3dea23d9888"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57431e723085b3dea23d9888')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000306s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.26ms)
+Completed 200 OK in 2ms (Views: 0.7ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"isom@ebert.us"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0013729999999999999s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5743206a3085b3dff95cfe1d'), "name"=>"", "email"=>"isom@ebert.us", "encrypted_password"=>"$2a$04$6fMSY62pMcQn2RKxLzhLeuAxCssLLLt67eQA4tvJX77ShiLL3Dt/i", "sign_in_count"=>0}], "ordered"=>true}
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00039s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"5743206a3085b3dff95cfe1d"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5743206a3085b3dff95cfe1d')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000402s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.46ms)
+Completed 200 OK in 27ms (Views: 8.9ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"conor.wolff@little.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0005629999999999999s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5743206a3085b3dff95cfe1e'), "name"=>"", "email"=>"conor.wolff@little.ca", "encrypted_password"=>"$2a$04$Pywr3CUrMZNK8uhTFeUeSuqcVgzHT8Zt1RZHDmdtOnn1LSHE13jum", "sign_in_count"=>0}], "ordered"=>...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00035s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"5743206a3085b3dff95cfe1e"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5743206a3085b3dff95cfe1e')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000341s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.28ms)
+Completed 200 OK in 2ms (Views: 0.8ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"kristian@watsicadicki.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.032594000000000005s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('574363703085b3f6fc4ad2af'), "name"=>"", "email"=>"kristian@watsicadicki.com", "encrypted_password"=>"$2a$04$y7FNzhmr8zJQYuuGfJ472ulofXuMfZf.bSMKoEU18FVNWZz7haMmq", "sign_in_count"=>0}], "ordere...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.017632s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"574363703085b3f6fc4ad2af"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('574363703085b3f6fc4ad2af')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0020229999999999996s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (1.1ms)
+Completed 200 OK in 48ms (Views: 25.0ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"devan@strosin.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000496s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('574363703085b3f6fc4ad2b0'), "name"=>"", "email"=>"devan@strosin.co.uk", "encrypted_password"=>"$2a$04$ExcR/Dmbxou6QY2TrAJjNeKqtknelnddWN5twgu4rLy8efN3FvtEi", "sign_in_count"=>0}], "ordered"=>tr...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000328s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"574363703085b3f6fc4ad2b0"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('574363703085b3f6fc4ad2b0')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00031600000000000004s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.35ms)
+Completed 200 OK in 2ms (Views: 0.8ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"mya@koelpin.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00093s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('574364563085b3f7470e3bdf'), "name"=>"", "email"=>"mya@koelpin.info", "encrypted_password"=>"$2a$04$o9TJXNc1b5zFQPDTQ4MuuuYVRveqdlLUZnT9ghtyl2AzfVd/EBuk6", "sign_in_count"=>0}], "ordered"=>true}...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00043200000000000004s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"574364563085b3f7470e3bdf"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('574364563085b3f7470e3bdf')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000368s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.63ms)
+Completed 200 OK in 30ms (Views: 9.1ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"celia_roob@donnelly.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.016000999999999998s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('574364563085b3f7470e3be0'), "name"=>"", "email"=>"celia_roob@donnelly.com", "encrypted_password"=>"$2a$04$yAJMxhj2OaAzmN7S62ND4OpIaJbl0sYOR6kRZDcxuraj6qIEggv1u", "sign_in_count"=>0}], "ordered"...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.024644s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"574364563085b3f7470e3be0"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('574364563085b3f7470e3be0')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00038100000000000005s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.72ms)
+Completed 200 OK in 4ms (Views: 2.0ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"ransom@grimeshoppe.info", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"ransom@grimeshoppe.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000395s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('574364563085b3f7470e3be1'), "name"=>"", "email"=>"ransom@grimeshoppe.info", "encrypted_password"=>"$2a$04$sNleerSl1fhgzU9ufGNmcuoUX2riRgVqGNSMN3525/uCU6oCTEgXy", "sign_in_count"=>0}], "ordered"...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000273s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.32ms)
+Completed 201 Created in 8ms (Views: 3.8ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"arden.berge@ferryshanahan.info", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"arden.berge@ferryshanahan.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000774s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('574364563085b3f7470e3be2'), "name"=>"", "email"=>"arden.berge@ferryshanahan.info", "encrypted_password"=>"$2a$04$eQnCEuj7wWnATc29/90uI.sGLPCn/9r/LCxYeWHnMe6ge.BddTchW", "sign_in_count"=>0}], "o...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000303s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.32ms)
+Completed 201 Created in 6ms (Views: 1.0ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 422 Unprocessable Entity in 17ms (Views: 1.3ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Completed 422 Unprocessable Entity in 5ms (Views: 1.1ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.6ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"alexander@kemmer.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0012339999999999999s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('574368193085b3f8fac27085'), "name"=>"", "email"=>"alexander@kemmer.com", "encrypted_password"=>"$2a$04$A2nUrxRJZLDUDNJLwfZTeemIniJqCzNU12wNdqSNICO4kpetfOt6a", "sign_in_count"=>0}], "ordered"=>t...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000498s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"574368193085b3f8fac27085"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('574368193085b3f8fac27085')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00040500000000000003s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.52ms)
+Completed 200 OK in 29ms (Views: 10.4ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"reyna@bartoletti.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000793s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5743681a3085b3f8fac27086'), "name"=>"", "email"=>"reyna@bartoletti.com", "encrypted_password"=>"$2a$04$KeY.nrsD4gWEmGreh7v9k.NueF6lsJ6KHN90wE6AjoRSGT7IxCjum", "sign_in_count"=>0}], "ordered"=>t...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000547s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"5743681a3085b3f8fac27086"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5743681a3085b3f8fac27086')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00031800000000000003s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.34ms)
+Completed 200 OK in 2ms (Views: 0.8ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"amina@russel.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"amina@russel.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0004890000000000001s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5743681a3085b3f8fac27087'), "name"=>"", "email"=>"amina@russel.com", "encrypted_password"=>"$2a$04$f3BJDdL/dh0WWD.JNB8LJO7ss896CVvjAGjYeD961o/hrimpRDAqC", "sign_in_count"=>0}], "ordered"=>true}...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000286s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.34ms)
+Completed 201 Created in 8ms (Views: 4.2ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"kallie@rolfson.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"kallie@rolfson.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000398s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5743681a3085b3f8fac27088'), "name"=>"", "email"=>"kallie@rolfson.ca", "encrypted_password"=>"$2a$04$yh7yrGSuRTJWQdzPXZMRg.cnrm3EnARt0cz7vI.HQ1mqJqo0bLus.", "sign_in_count"=>0}], "ordered"=>true...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000266s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.61ms)
+Completed 201 Created in 5ms (Views: 1.5ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 422 Unprocessable Entity in 20ms (Views: 1.5ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.6ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"luz.bogan@lindryan.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000398s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5743681a3085b3f8fac27089'), "name"=>"", "email"=>"luz.bogan@lindryan.co.uk", "encrypted_password"=>"$2a$04$DIDx1wmi4efCzCrZU8TIf.EK8ddtnEiYX.VXT89rE1/qQYMrlDJdW", "sign_in_count"=>0}], "ordered...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00029s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"5743681a3085b3f8fac27089"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5743681a3085b3f8fac27089')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00031400000000000004s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"newmail@example.com", "_id"=>{"$ne"=>BSON::ObjectId('5743681a3085b3f8fac27089')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.012384s
+MONGODB | localhost:27017 | dride_test.update | STARTED | {"update"=>"users", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5743681a3085b3f8fac27089')}, "u"=>{"$set"=>{"email"=>"newmail@example.com"}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | dride_test.update | SUCCEEDED | 0.006684s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.39ms)
+Completed 200 OK in 24ms (Views: 1.2ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"reagan_spencer@wolf.name"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000406s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5743681a3085b3f8fac2708a'), "name"=>"", "email"=>"reagan_spencer@wolf.name", "encrypted_password"=>"$2a$04$J8ymRpK9Y2pjl6PhxLcqRuzEU27x6SoSAZTy8tDPZjaVfW4uJYWle", "sign_in_count"=>0}], "ordered...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00027400000000000005s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"5743681a3085b3f8fac2708a"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5743681a3085b3f8fac2708a')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000364s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"newmail@example.com", "_id"=>{"$ne"=>BSON::ObjectId('5743681a3085b3f8fac2708a')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000514s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 5ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"johnny_koelpin@labadie.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00042300000000000004s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5743681a3085b3f8fac2708b'), "name"=>"", "email"=>"johnny_koelpin@labadie.ca", "encrypted_password"=>"$2a$04$T4Vm1xpBtaqlH21oSgrx5eW0BvmR.XdYQ1eB9YlsgHtSwCB3ROZui", "sign_in_count"=>0}], "ordere...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000321s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"5743681a3085b3f8fac2708b"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5743681a3085b3f8fac2708b')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000465s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('5743681a3085b3f8fac2708b')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000515s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 6ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"addie_welch@deckow.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000407s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5743681a3085b3f8fac2708c'), "name"=>"", "email"=>"addie_welch@deckow.ca", "encrypted_password"=>"$2a$04$kB1mBd.I01AbwQ2.7m6GNeUK8aii8sHp3hwsFmZbtsP1QIHQvwCyG", "sign_in_count"=>0}], "ordered"=>...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000298s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"5743681a3085b3f8fac2708c"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5743681a3085b3f8fac2708c')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000325s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('5743681a3085b3f8fac2708c')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000413s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"gabe@zemlak.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000387s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('5743681a3085b3f8fac2708d'), "name"=>"", "email"=>"gabe@zemlak.info", "encrypted_password"=>"$2a$04$RHOfNLpIUjtI07ez8rAzke/fYp90uGecDCaj4cZCWOCBzcKV1UGXu", "sign_in_count"=>0}], "ordered"=>true}...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000322s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"5743681a3085b3f8fac2708d"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5743681a3085b3f8fac2708d')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00035400000000000004s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('5743681a3085b3f8fac2708d')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000426s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"lesly_dietrich@yundt.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0007959999999999999s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20013'), "name"=>"", "email"=>"lesly_dietrich@yundt.com", "encrypted_password"=>"$2a$04$2IwgefxqefX.aRJIH9kDXOLqZCaLPHotWu/CCAdO6IMLGi9ue0PLi", "sign_in_count"=>0}], "ordered...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000375s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57436a6e3085b3f996b20013"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20013')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000473s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.47ms)
+Completed 200 OK in 32ms (Views: 9.2ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"janae_towne@collins.biz"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00046300000000000003s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20014'), "name"=>"", "email"=>"janae_towne@collins.biz", "encrypted_password"=>"$2a$04$RM9BGoCnWCBIMFT643nK3ermWh0vROoEB0mTSVM0Ivg8cpusEToOa", "sign_in_count"=>0}], "ordered"...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00031600000000000004s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57436a6e3085b3f996b20014"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20014')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000371s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.33ms)
+Completed 200 OK in 2ms (Views: 0.8ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"cara@stokes.us", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"cara@stokes.us"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00039s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20015'), "name"=>"", "email"=>"cara@stokes.us", "encrypted_password"=>"$2a$04$BhmD2ZCLQf5V5EEnekEvZOt4.9XqB0rGQGpSN5IzXePnfk03UHh8e", "sign_in_count"=>0}], "ordered"=>true}
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000293s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.36ms)
+Completed 201 Created in 10ms (Views: 6.5ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"johathan_murphy@hermistonkohler.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"johathan_murphy@hermistonkohler.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000393s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20016'), "name"=>"", "email"=>"johathan_murphy@hermistonkohler.co.uk", "encrypted_password"=>"$2a$04$fRYQYI8ToM0cSZNkVMdU8eyDXjifqv4axltEog5S8UCO6sUVJr38i", "sign_in_count"=>...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000303s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.32ms)
+Completed 201 Created in 5ms (Views: 1.0ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 28ms (Views: 1.3ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.6ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"graham_homenick@ritchie.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000496s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20017'), "name"=>"", "email"=>"graham_homenick@ritchie.co.uk", "encrypted_password"=>"$2a$04$G6o7f2wNM4MBnyIGe/tGau62GLBZVv/qr2MtAZRwdyOHdKXAJQ/Qa", "sign_in_count"=>0}], "or...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000354s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"57436a6e3085b3f996b20017"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20017')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000371s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"newmail@example.com", "_id"=>{"$ne"=>BSON::ObjectId('57436a6e3085b3f996b20017')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000484s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.8ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"thurman@champlingoyette.biz"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000605s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20018'), "name"=>"", "email"=>"thurman@champlingoyette.biz", "encrypted_password"=>"$2a$04$jEL3/oyxCvGQC676wITXT.HsIFSM5yakbquYVu.1s9YxyVcHjlqA.", "sign_in_count"=>0}], "orde...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00028s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"57436a6e3085b3f996b20018"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20018')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00039200000000000004s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"newmail@example.com", "_id"=>{"$ne"=>BSON::ObjectId('57436a6e3085b3f996b20018')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000465s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"donnell@kuphal.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00045000000000000004s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20019'), "name"=>"", "email"=>"donnell@kuphal.co.uk", "encrypted_password"=>"$2a$04$qIsXkQd4RSTQLf1RxDUkkOqJCZxQo.GxSCfRrXeLKY.whkhy71sDa", "sign_in_count"=>0}], "ordered"=>t...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000306s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436a6e3085b3f996b20019"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436a6e3085b3f996b20019')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00042100000000000004s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436a6e3085b3f996b20019')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000431s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jonas@mertz.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00042100000000000004s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436a6e3085b3f996b2001a'), "name"=>"", "email"=>"jonas@mertz.info", "encrypted_password"=>"$2a$04$l0hTImyOQ.cwhk1FdRYVsOkXgebZIRCSdzne5VnteM9U8kPuZ.bhq", "sign_in_count"=>0}], "ordered"=>true}...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000337s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436a6e3085b3f996b2001a"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436a6e3085b3f996b2001a')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000348s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436a6e3085b3f996b2001a')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000418s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"evan@gulgowski.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000434s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436a6e3085b3f996b2001b'), "name"=>"", "email"=>"evan@gulgowski.co.uk", "encrypted_password"=>"$2a$04$OfqPegvYiMiMvCiXzmeibuN0.tpmSC1x5FloIWX3bR7NRnv5z5qdu", "sign_in_count"=>0}], "ordered"=>t...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00032700000000000003s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436a6e3085b3f996b2001b"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436a6e3085b3f996b2001b')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000399s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436a6e3085b3f996b2001b')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.001276s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 6ms (Views: 0.7ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"dario@metzframi.biz"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000785s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b3b3085b3f9db2e2ebd'), "name"=>"", "email"=>"dario@metzframi.biz", "encrypted_password"=>"$2a$04$GiBMZjDdihDX03Il.GMntu5ARCgR1A6Ergk9xA5L0f/Y0FpHviZMS", "sign_in_count"=>0}], "ordered"=>tr...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000361s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57436b3b3085b3f9db2e2ebd"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b3b3085b3f9db2e2ebd')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00047s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.45ms)
+Completed 200 OK in 27ms (Views: 9.5ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jean_gusikowski@vandervort.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000435s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b3b3085b3f9db2e2ebe'), "name"=>"", "email"=>"jean_gusikowski@vandervort.info", "encrypted_password"=>"$2a$04$xrVZfxQX9m9H/MjyFvbIwOBuAP3CqWmpn4xyG5d2C/LH9jsBHJuJ6", "sign_in_count"=>0}], "...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000332s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57436b3b3085b3f9db2e2ebe"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b3b3085b3f9db2e2ebe')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000367s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.36ms)
+Completed 200 OK in 2ms (Views: 0.8ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"alysson@bahringer.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"alysson@bahringer.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000446s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b3b3085b3f9db2e2ebf'), "name"=>"", "email"=>"alysson@bahringer.com", "encrypted_password"=>"$2a$04$/GjCOtQamCc9XUckyt1NtuyyVAc7BwATA4X.Vm//Z2TmZrcZCpkm6", "sign_in_count"=>0}], "ordered"=>...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000359s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.36ms)
+Completed 201 Created in 7ms (Views: 3.3ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"emilie@legros.info", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"emilie@legros.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00042500000000000003s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b3b3085b3f9db2e2ec0'), "name"=>"", "email"=>"emilie@legros.info", "encrypted_password"=>"$2a$04$axO4hp682OwbdTIF379Bx.mhIzOp8Q3PXe/j97HcLLkiCGo55gnky", "sign_in_count"=>0}], "ordered"=>tru...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000328s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.35ms)
+Completed 201 Created in 5ms (Views: 1.1ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 30ms (Views: 1.2ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.6ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"marcos@grant.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00043000000000000004s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec1'), "name"=>"", "email"=>"marcos@grant.info", "encrypted_password"=>"$2a$04$I.Isi.arRL5k50GqcGENOejlK9erk/ud8gqtfct0Ic.9scxLyfbH6", "sign_in_count"=>0}], "ordered"=>true...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00033600000000000004s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"57436b3c3085b3f9db2e2ec1"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec1')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00036899999999999997s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"newmail@example.com", "_id"=>{"$ne"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec1')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000509s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"iva@grahamdurgan.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00055s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec2'), "name"=>"", "email"=>"iva@grahamdurgan.co.uk", "encrypted_password"=>"$2a$04$36Qw8WKb4OG2har0tNkxce5rfuEkHadjXemXsMzyiuTOGDja05Y5K", "sign_in_count"=>0}], "ordered"=...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000333s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"57436b3c3085b3f9db2e2ec2"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec2')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000313s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"newmail@example.com", "_id"=>{"$ne"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec2')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000458s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"norberto_dubuque@spencer.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00042100000000000004s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec3'), "name"=>"", "email"=>"norberto_dubuque@spencer.info", "encrypted_password"=>"$2a$04$5GyGkutxDwL8xVALi.AzduzV8N81wf4rJlLVRMTkAVQDSwqfefFy.", "sign_in_count"=>0}], "or...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000349s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436b3c3085b3f9db2e2ec3"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec3')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00029s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec3')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000463s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"dianna@glover.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000428s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec4'), "name"=>"", "email"=>"dianna@glover.com", "encrypted_password"=>"$2a$04$2ytS.w5StmtPdBkvsSUvnePIBe4ILvg9Nz5q.YXkV9AVrHj9NvAQ2", "sign_in_count"=>0}], "ordered"=>true...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00033800000000000003s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436b3c3085b3f9db2e2ec4"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec4')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000342s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec4')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000482s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"sylvia@schuppe.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0004930000000000001s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec5'), "name"=>"", "email"=>"sylvia@schuppe.co.uk", "encrypted_password"=>"$2a$04$8P0HLuEEzTBC98fLIvJnhuTlaUt6GM8SfZMply8daLiFVVMA7lRYm", "sign_in_count"=>0}], "ordered"=>t...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000343s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436b3c3085b3f9db2e2ec5"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec5')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00033200000000000005s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436b3c3085b3f9db2e2ec5')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0005600000000000001s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 422 Unprocessable Entity in 6ms (Views: 2.0ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"maye@willms.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000812s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b993085b3fa08916087'), "name"=>"", "email"=>"maye@willms.ca", "encrypted_password"=>"$2a$04$g00G9CjIon7XAnshBHapIeuuR3bsJu7tRnAByjJqQ1y46B7uNXvmO", "sign_in_count"=>0}], "ordered"=>true}
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000363s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57436b993085b3fa08916087"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b993085b3fa08916087')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000445s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.54ms)
+Completed 200 OK in 27ms (Views: 9.3ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jacky@hirthe.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00052s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b993085b3fa08916088'), "name"=>"", "email"=>"jacky@hirthe.info", "encrypted_password"=>"$2a$04$tXhMl8Yohc7lPY11.4ExIeoQmSSjBnjt1FnFnOrwtMHvPjAaFJuaW", "sign_in_count"=>0}], "ordered"=>true...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000366s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57436b993085b3fa08916088"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b993085b3fa08916088')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000348s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.36ms)
+Completed 200 OK in 3ms (Views: 0.9ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"myrtis@reinger.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"myrtis@reinger.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000437s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b993085b3fa08916089'), "name"=>"", "email"=>"myrtis@reinger.ca", "encrypted_password"=>"$2a$04$MlkhnUymlBqtsquXbo1D1ufk63zu2PR3EhHGBf2xlSVVjKIpXWPIy", "sign_in_count"=>0}], "ordered"=>true...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000296s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.33ms)
+Completed 201 Created in 7ms (Views: 2.9ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"emmie_homenick@cruickshankwill.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"emmie_homenick@cruickshankwill.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000455s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b993085b3fa0891608a'), "name"=>"", "email"=>"emmie_homenick@cruickshankwill.co.uk", "encrypted_password"=>"$2a$04$ipjH7ZN1nzD1Ii1oC/IHGeAYBMt9mDbkWUVd2l3dcVG1AIlvtTiC6", "sign_in_count"=>0...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00035800000000000003s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.33ms)
+Completed 201 Created in 5ms (Views: 1.0ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 15ms (Views: 1.4ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 5ms (Views: 1.4ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"roslyn_cremin@kuhic.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000416s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b993085b3fa0891608b'), "name"=>"", "email"=>"roslyn_cremin@kuhic.info", "encrypted_password"=>"$2a$04$KK8ZHOJZ7tHxY0D6i3CacuCmCx81p9rAx386hPqB1qh.MztCaTDnm", "sign_in_count"=>0}], "ordered...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00032700000000000003s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"57436b993085b3fa0891608b"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b993085b3fa0891608b')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000316s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"newmail@example.com", "_id"=>{"$ne"=>BSON::ObjectId('57436b993085b3fa0891608b')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000504s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"tristin_gerhold@donnellywalter.name"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000544s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b993085b3fa0891608c'), "name"=>"", "email"=>"tristin_gerhold@donnellywalter.name", "encrypted_password"=>"$2a$04$ai/s.5etxFgXwgu1qle4/OYQN/puv3YZaKguBkhedNkkWlQXGmpZa", "sign_in_count"=>0}...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00037999999999999997s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"57436b993085b3fa0891608c"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b993085b3fa0891608c')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00035200000000000005s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"newmail@example.com", "_id"=>{"$ne"=>BSON::ObjectId('57436b993085b3fa0891608c')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000458s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.8ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"stanley@abshire.co.uk"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000478s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b993085b3fa0891608d'), "name"=>"", "email"=>"stanley@abshire.co.uk", "encrypted_password"=>"$2a$04$GXmfPtzJZB9qh9YNw7bdA.M/dZgNpN0zbSqpA2DFE/lZnGH2ZFPLO", "sign_in_count"=>0}], "ordered"=>...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000356s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436b993085b3fa0891608d"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b993085b3fa0891608d')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000337s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436b993085b3fa0891608d')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000487s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"dante@wuckertoga.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000496s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b993085b3fa0891608e'), "name"=>"", "email"=>"dante@wuckertoga.com", "encrypted_password"=>"$2a$04$q8e5UYohL1./Pt5IG6DHK.HoOiQMPH1qDUC1r3v5KXY8DtuJCQSXC", "sign_in_count"=>0}], "ordered"=>t...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00037799999999999997s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436b993085b3fa0891608e"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b993085b3fa0891608e')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000305s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436b993085b3fa0891608e')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00046300000000000003s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"travon@feeneysenger.us"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00044100000000000004s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436b9a3085b3fa0891608f'), "name"=>"", "email"=>"travon@feeneysenger.us", "encrypted_password"=>"$2a$04$.kCp2KihYeeWWRMa7AWmyOZOeB9dXru2Z6870e7AgFq9EZXMi0EGW", "sign_in_count"=>0}], "ordered"=...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00037200000000000004s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436b9a3085b3fa0891608f"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436b9a3085b3fa0891608f')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00030000000000000003s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436b9a3085b3fa0891608f')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000503s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"hosea@dach.us"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000951s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436eb43085b3fb643c878b'), "name"=>"", "email"=>"hosea@dach.us", "encrypted_password"=>"$2a$04$ePDi4uLxyME.rlsBx0seMOOEQ7UUYt02dmtFG2Xl3uIOxpgUkSE8i", "sign_in_count"=>0}], "ordered"=>true}
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00037400000000000004s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57436eb43085b3fb643c878b"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436eb43085b3fb643c878b')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000417s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.48ms)
+Completed 200 OK in 27ms (Views: 9.2ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jesse@osinskistehr.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00043400000000000003s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436eb43085b3fb643c878c'), "name"=>"", "email"=>"jesse@osinskistehr.ca", "encrypted_password"=>"$2a$04$KutIxjOPxKMnSJqqASXkaeGXY0eOmqGIc2ZBOiIDUPPUU.X5M0W8y", "sign_in_count"=>0}], "ordered"=>...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00035999999999999997s
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"57436eb43085b3fb643c878c"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436eb43085b3fb643c878c')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000384s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.33ms)
+Completed 200 OK in 2ms (Views: 0.8ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bernice@bergstrom.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bernice@bergstrom.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000425s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436eb43085b3fb643c878d'), "name"=>"", "email"=>"bernice@bergstrom.ca", "encrypted_password"=>"$2a$04$6l3KvKkcEVx71qWNVxCjrOdOBgcFIFuciPcSoOBbvrJtrcHw5zyY6", "sign_in_count"=>0}], "ordered"=>t...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000313s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.41ms)
+Completed 201 Created in 8ms (Views: 3.4ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"maverick_hauck@zemlaksteuber.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"maverick_hauck@zemlaksteuber.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000579s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436eb43085b3fb643c878e'), "name"=>"", "email"=>"maverick_hauck@zemlaksteuber.com", "encrypted_password"=>"$2a$04$ewFEVqXoP2xIvRDu5L8YP.tXB9tJXhwunbVIrTi9TX3DFeB7kU2Bu", "sign_in_count"=>0}], ...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000384s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.39ms)
+Completed 201 Created in 7ms (Views: 1.3ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 16ms (Views: 1.2ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.6ms)
+Processing by Api::V1::UsersController#create as application/vnd.dride.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"hank_pollich@jewess.ca"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000586s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436eb43085b3fb643c878f'), "name"=>"", "email"=>"hank_pollich@jewess.ca", "encrypted_password"=>"$2a$04$RIrNWBBcKs4ABRHjTVuJyeLSosU8rB53dpacJo0HPDGkcgf4XRQ32", "sign_in_count"=>0}], "ordered"=...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000339s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"57436eb43085b3fb643c878f"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436eb43085b3fb643c878f')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000322s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"newmail@example.com", "_id"=>{"$ne"=>BSON::ObjectId('57436eb43085b3fb643c878f')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00043s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"jayson@paucek.com"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000477s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436eb43085b3fb643c8790'), "name"=>"", "email"=>"jayson@paucek.com", "encrypted_password"=>"$2a$04$gXC2ULl11h.Uslvwcobh2OgqZj2HI.3XElI0pvJ4d2tSUtV5gg5vO", "sign_in_count"=>0}], "ordered"=>true...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000328s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"57436eb43085b3fb643c8790"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436eb43085b3fb643c8790')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000396s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"newmail@example.com", "_id"=>{"$ne"=>BSON::ObjectId('57436eb43085b3fb643c8790')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00046600000000000005s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 5ms (Views: 0.8ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"isai_mccullough@von.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000464s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436eb43085b3fb643c8791'), "name"=>"", "email"=>"isai_mccullough@von.info", "encrypted_password"=>"$2a$04$siaT51.t3gfcIlWdZ90hV.RB103AHGqiJBv/9/YbMuPbq3Z.MXkBu", "sign_in_count"=>0}], "ordered...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000352s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436eb43085b3fb643c8791"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436eb43085b3fb643c8791')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000313s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436eb43085b3fb643c8791')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0005070000000000001s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.7ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"doug.ondricka@bogisich.info"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000579s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436eb43085b3fb643c8792'), "name"=>"", "email"=>"doug.ondricka@bogisich.info", "encrypted_password"=>"$2a$04$Wo7qu8hpMfQd/mlWAxSApu3eCIjq/tT6pXYx3tt2Z3YY0.raDcLQC", "sign_in_count"=>0}], "orde...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.00033400000000000004s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436eb43085b3fb643c8792"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436eb43085b3fb643c8792')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00033400000000000004s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436eb43085b3fb643c8792')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.000465s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.8ms)
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"arnaldo_johnson@fritsch.name"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0005020000000000001s
+MONGODB | localhost:27017 | dride_test.insert | STARTED | {"insert"=>"users", "documents"=>[{"_id"=>BSON::ObjectId('57436eb43085b3fb643c8793'), "name"=>"", "email"=>"arnaldo_johnson@fritsch.name", "encrypted_password"=>"$2a$04$ogw1XCtb2ydpMo60NCQh5.ubzJ36vmQV75MfJPy8kyFyl4hC3tF1C", "sign_in_count"=>0}], "ord...
+MONGODB | localhost:27017 | dride_test.insert | SUCCEEDED | 0.000368s
+Processing by Api::V1::UsersController#update as application/vnd.dride.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"57436eb43085b3fb643c8793"}
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('57436eb43085b3fb643c8793')}}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.00032500000000000004s
+MONGODB | localhost:27017 | dride_test.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"bademail.com", "_id"=>{"$ne"=>BSON::ObjectId('57436eb43085b3fb643c8793')}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | dride_test.find | SUCCEEDED | 0.0006760000000000001s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 6ms (Views: 0.7ms)
