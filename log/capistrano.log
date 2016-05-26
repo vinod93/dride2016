@@ -520,3 +520,205 @@ You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
  DEBUG [88b7be44] 	
  DEBUG [88b7be44] 	(See full trace by running task with --trace)
  DEBUG [88b7be44] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-05-27 01:41:29 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8548be26] Running [ -d ~/.rvm ] on 188.166.185.120
+ DEBUG [8548be26] Command: [ -d ~/.rvm ]
+ DEBUG [8548be26] Finished in 12.814 seconds with exit status 1 (failed).
+ DEBUG [a5ac1190] Running [ -d /usr/local/rvm ] on 188.166.185.120
+ DEBUG [a5ac1190] Command: [ -d /usr/local/rvm ]
+ DEBUG [a5ac1190] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [5eb786ec] Running /usr/local/rvm/bin/rvm version on 188.166.185.120
+ DEBUG [5eb786ec] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [5eb786ec] 	rvm 1.26.11 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [5eb786ec] 	
+ DEBUG [5eb786ec] Finished in 0.391 seconds with exit status 0 (successful).
+ DEBUG [4246e248] Running /usr/local/rvm/bin/rvm current on 188.166.185.120
+ DEBUG [4246e248] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [4246e248] 	ruby-2.2.1
+ DEBUG [4246e248] 	
+ DEBUG [4246e248] Finished in 0.511 seconds with exit status 0 (successful).
+ DEBUG [75a95d74] Running /usr/local/rvm/bin/rvm default do ruby --version on 188.166.185.120
+ DEBUG [75a95d74] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [75a95d74] 	ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+ DEBUG [75a95d74] Finished in 0.512 seconds with exit status 0 (successful).
+  INFO [8256c8fa] Running /usr/bin/env mkdir -p /tmp/dride/ on 188.166.185.120
+ DEBUG [8256c8fa] Command: /usr/bin/env mkdir -p /tmp/dride/
+  INFO [8256c8fa] Finished in 0.142 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/dride/git-ssh.sh 0.0%
+  INFO Uploading /tmp/dride/git-ssh.sh 100.0%
+  INFO [b9d7cfc8] Running /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh on 188.166.185.120
+ DEBUG [b9d7cfc8] Command: /usr/bin/env chmod +rx /tmp/dride/git-ssh.sh
+  INFO [b9d7cfc8] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [8e00316d] Running /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git on 188.166.185.120
+ DEBUG [8e00316d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:vinod93/dride2016.git )
+ DEBUG [8e00316d] 	e07f0e532a619c96a402ffe044f29d10f96b20c0	refs/heads/master
+  INFO [8e00316d] Finished in 8.506 seconds with exit status 0 (successful).
+  INFO [1fa7fef1] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases on 188.166.185.120
+ DEBUG [1fa7fef1] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared /home/rails/apps/dride/releases
+  INFO [1fa7fef1] Finished in 6.984 seconds with exit status 0 (successful).
+  INFO [335aff1a] Running /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets on 188.166.185.120
+ DEBUG [335aff1a] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/shared/public/assets
+  INFO [335aff1a] Finished in 2.661 seconds with exit status 0 (successful).
+ DEBUG [bac35436] Running [ -f /home/rails/apps/dride/shared/puma.rb ] on 188.166.185.120
+ DEBUG [bac35436] Command: [ -f /home/rails/apps/dride/shared/puma.rb ]
+ DEBUG [bac35436] Finished in 0.143 seconds with exit status 0 (successful).
+ DEBUG [eb4ab0d8] Running [ -f /home/rails/apps/dride/current/REVISION ] on 188.166.185.120
+ DEBUG [eb4ab0d8] Command: [ -f /home/rails/apps/dride/current/REVISION ]
+ DEBUG [eb4ab0d8] Finished in 7.227 seconds with exit status 1 (failed).
+ DEBUG [e3584444] Running [ -f /home/rails/apps/dride/repo/HEAD ] on 188.166.185.120
+ DEBUG [e3584444] Command: [ -f /home/rails/apps/dride/repo/HEAD ]
+ DEBUG [e3584444] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/rails/apps/dride/repo
+ DEBUG [f40f204c] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [f40f204c] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [f40f204c] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [da00e217] Running /usr/bin/env git remote update --prune on 188.166.185.120
+ DEBUG [da00e217] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [da00e217] 	Fetching origin
+ DEBUG [da00e217] 	
+ DEBUG [da00e217] 	Warning: Permanently added the RSA host key for IP address '192.30.252.123' to the list of known hosts.
+ DEBUG [da00e217] 	
+ DEBUG [da00e217] 	remote: Counting objects: 7, done.[K
+ DEBUG [da00e217] 	
+ DEBUG [da00e217] 	remote: Compressing objects:  50% (1/2)   [K
+ DEBUG [da00e217] 	remote: Compressing objects: 100% (2/2)   [K
+ DEBUG [da00e217] 	remote: Compressing objects: 100% (2/2), done.[K
+ DEBUG [da00e217] 	
+ DEBUG [da00e217] 	remote: Total 7 (delta 5), reused 7 (delta 5), pack-reused 0[K
+ DEBUG [da00e217] 	
+ DEBUG [da00e217] 	Unpacking objects:  14% (1/7)   
+ DEBUG [da00e217] 	Unpacking objects:  28% (2/7)   
+ DEBUG [da00e217] 	Unpacking objects:  42% (3/7)   
+ DEBUG [da00e217] 	Unpacking objects:  57% (4/7)   
+ DEBUG [da00e217] 	Unpacking objects:  71% (5/7)   
+ DEBUG [da00e217] 	Unpacking objects:  85% (6/7)   
+ DEBUG [da00e217] 	Unpacking objects: 100% (7/7)   
+ DEBUG [da00e217] 	Unpacking objects: 100% (7/7), done.
+ DEBUG [da00e217] 	
+ DEBUG [da00e217] 	From github.com:vinod93/dride2016
+ DEBUG [da00e217] 	
+ DEBUG [da00e217] 	   1304f9a..e07f0e5  master     -> master
+ DEBUG [da00e217] 	
+  INFO [da00e217] Finished in 5.521 seconds with exit status 0 (successful).
+ DEBUG [03fb9a16] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [03fb9a16] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [03fb9a16] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [add40e9a] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526201209 on 188.166.185.120
+ DEBUG [add40e9a] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526201209 )
+  INFO [add40e9a] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [c7805222] Running /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526201209 on 188.166.185.120
+ DEBUG [c7805222] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/rails/apps/dride/releases/20160526201209 )
+  INFO [c7805222] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [34a2ee16] Running if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [34a2ee16] Command: if test ! -d /home/rails/apps/dride/repo; then echo "Directory does not exist '/home/rails/apps/dride/repo'" 1>&2; false; fi
+ DEBUG [34a2ee16] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [7e0de1ff] Running /usr/bin/env git rev-list --max-count=1 master on 188.166.185.120
+ DEBUG [7e0de1ff] Command: cd /home/rails/apps/dride/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/dride/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [7e0de1ff] 	e07f0e532a619c96a402ffe044f29d10f96b20c0
+ DEBUG [7e0de1ff] 	
+ DEBUG [7e0de1ff] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [37b5e8b1] Running if test ! -d /home/rails/apps/dride/releases/20160526201209; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526201209'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [37b5e8b1] Command: if test ! -d /home/rails/apps/dride/releases/20160526201209; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526201209'" 1>&2; false; fi
+ DEBUG [37b5e8b1] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [338fc60e] Running /usr/bin/env echo "e07f0e532a619c96a402ffe044f29d10f96b20c0" >> REVISION on 188.166.185.120
+ DEBUG [338fc60e] Command: cd /home/rails/apps/dride/releases/20160526201209 && /usr/bin/env echo "e07f0e532a619c96a402ffe044f29d10f96b20c0" >> REVISION
+  INFO [338fc60e] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [f141fd44] Running /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526201209/public on 188.166.185.120
+ DEBUG [f141fd44] Command: /usr/bin/env mkdir -p /home/rails/apps/dride/releases/20160526201209/public
+  INFO [f141fd44] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [000bb240] Running [ -L /home/rails/apps/dride/releases/20160526201209/public/assets ] on 188.166.185.120
+ DEBUG [000bb240] Command: [ -L /home/rails/apps/dride/releases/20160526201209/public/assets ]
+ DEBUG [000bb240] Finished in 0.136 seconds with exit status 1 (failed).
+ DEBUG [119d03e9] Running [ -d /home/rails/apps/dride/releases/20160526201209/public/assets ] on 188.166.185.120
+ DEBUG [119d03e9] Command: [ -d /home/rails/apps/dride/releases/20160526201209/public/assets ]
+ DEBUG [119d03e9] Finished in 0.138 seconds with exit status 1 (failed).
+  INFO [e35bba89] Running /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526201209/public/assets on 188.166.185.120
+ DEBUG [e35bba89] Command: /usr/bin/env ln -s /home/rails/apps/dride/shared/public/assets /home/rails/apps/dride/releases/20160526201209/public/assets
+  INFO [e35bba89] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [d77f08d3] Running if test ! -d /home/rails/apps/dride/releases/20160526201209; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526201209'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [d77f08d3] Command: if test ! -d /home/rails/apps/dride/releases/20160526201209; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526201209'" 1>&2; false; fi
+ DEBUG [d77f08d3] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [b901fd45] Running /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet on 188.166.185.120
+ DEBUG [b901fd45] Command: cd /home/rails/apps/dride/releases/20160526201209 && /usr/local/rvm/bin/rvm default do bundle install --path /home/rails/apps/dride/shared/bundle --without development test --deployment --quiet
+ DEBUG [b901fd45] 	Warning, new version of rvm available '1.27.0', you are using older version '1.26.11'.
+ DEBUG [b901fd45] 	
+ DEBUG [b901fd45] 	You can disable this warning with:    echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+ DEBUG [b901fd45] 	
+ DEBUG [b901fd45] 	You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
+ DEBUG [b901fd45] 	
+  INFO [b901fd45] Finished in 3.244 seconds with exit status 0 (successful).
+ DEBUG [a60a3b5e] Running if test ! -d /home/rails/apps/dride/releases/20160526201209; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526201209'" 1>&2; false; fi on 188.166.185.120
+ DEBUG [a60a3b5e] Command: if test ! -d /home/rails/apps/dride/releases/20160526201209; then echo "Directory does not exist '/home/rails/apps/dride/releases/20160526201209'" 1>&2; false; fi
+ DEBUG [a60a3b5e] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [496d7b6a] Running /usr/local/rvm/bin/rvm default do bundle exec rake assets:precompile on 188.166.185.120
+ DEBUG [496d7b6a] Command: cd /home/rails/apps/dride/releases/20160526201209 && ( export RAILS_ENV="production" ; /usr/local/rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [496d7b6a] 	rake aborted!
+ DEBUG [496d7b6a] 	Sprockets::FileNotFound: couldn't find file 'turbolinks' with type 'application/javascript'
+ DEBUG [496d7b6a] 	/home/rails/apps/dride/releases/20160526201209/app/assets/javascripts/application.js:15
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/resolve.rb:64:in `resolve!'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/directive_processor.rb:399:in `resolve'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/directive_processor.rb:207:in `process_require_directive'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/directive_processor.rb:180:in `block in process_directives'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/directive_processor.rb:178:in `each'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/directive_processor.rb:178:in `process_directives'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/directive_processor.rb:83:in `_call'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/directive_processor.rb:68:in `call'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/processor_utils.rb:75:in `call_processor'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/processor_utils.rb:56:in `reverse_each'
+ DEBUG [496d7b6a] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/processor_utils.rb:56:in `call_processors'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/loader.rb:134:in `load_from_unloaded'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/loader.rb:60:in `block in load'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/loader.rb:44:in `load'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/cached_environment.rb:20:in `block in initialize'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/cached_environment.rb:47:in `yield'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/cached_environment.rb:47:in `load'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/bundle.rb:23:in `block in call'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/utils.rb:183:in `dfs'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/bundle.rb:24:in `call'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/processor_utils.rb:75:in `call_processor'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/processor_utils.rb:56:in `reverse_each'
+ DEBUG [496d7b6a] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/processor_utils.rb:56:in `call_processors'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/loader.rb:134:in `load_from_unloaded'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/loader.rb:60:in `block in load'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/loader.rb:44:in `load'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/cached_environment.rb:20:in `block in initialize'
+ DEBUG [496d7b6a] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/cached_environment.rb:47:in `yield'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/cached_environment.rb:47:in `load'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/base.rb:66:in `find_asset'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/base.rb:73:in `find_all_linked_assets'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/manifest.rb:142:in `block in find'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/legacy.rb:114:in `block (2 levels) in logical_paths'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/path_utils.rb:223:in `block in stat_tree'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/path_utils.rb:207:in `block in stat_directory'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/path_utils.rb:204:in `each'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/path_utils.rb:204:in `stat_directory'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/path_utils.rb:222:in `stat_tree'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/legacy.rb:105:in `each'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/legacy.rb:105:in `block in logical_paths'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/legacy.rb:104:in `each'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/legacy.rb:104:in `logical_paths'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/manifest.rb:140:in `find'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/sprockets/manifest.rb:185:in `compile'
+ DEBUG [496d7b6a] 	
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.4/lib/sprockets/rails/task.rb:68:in `block (3 levels) in define'
+ DEBUG [496d7b6a] 	/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-3.6.0/lib/rake/sprocketstask.rb:147:in `with_logger'
+/home/rails/apps/dride/shared/bundle/ruby/2.2.0/gems/sprockets-rails-3.0.4/lib/sprockets/rails/task.rb:67:in `block (2 levels) in define'
+ DEBUG [496d7b6a] 	
+ DEBUG [496d7b6a] 	Tasks: TOP => assets:precompile
+ DEBUG [496d7b6a] 	(See full trace by running task with --trace)
